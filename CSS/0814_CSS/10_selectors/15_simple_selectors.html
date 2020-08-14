@@ -54,6 +54,32 @@
                     opacity: 0.5;
                     z-index: -100;
         } */
+        /* #Bulbasaur{
+            background-image: url("image/Pokemon/pokeball.png");
+            background-repeat: no-repeat;
+            background-size: 30%;
+        } */
+        .pokemon{
+            background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("image/Pokemon/pokeball.png");
+        
+            /* background-image: url("image/Pokemon/pokeball.png"); */
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position:center; 
+            /* background:rgba(255,255,255,1); */
+            /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("image/Pokemon/pokeball.png") */
+            /* opacity:0.5;
+            filter: alpha(opacity=40)s; */
+        }   
+       img{
+           width: 180px;
+           height: 180px;
+       }
+       div{
+           display: inline-block;
+       }
+
+       
     </style>
 
 </head>
@@ -69,7 +95,26 @@
     <!-- 3. 多的貓科，請自由命名 -->
     <!-- 4. 回到 <head> 裡面的 <style> 區塊，開始進行css樣式的編輯 -->
     <!-- 5. 最後，將CSS獨立為一個檔案，使用 link 元素連結至HTML檔案 -->
-
+    <div class="pokemon" id="Bulbasaur" >
+        <h3>妙蛙種子</h3>
+        <img src="image/Pokemon/001.png" alt="">
+    </div>    
+    <div class="pokemon" id="Charmander">
+        <h3>小火龍</h3>
+        <img src="image/Pokemon/004.png" alt="">
+    </div>    
+    <div class="pokemon"  id="Squirtle">
+        <h3>傑尼龜</h3>
+        <img src="image/Pokemon/007.png" alt="">
+    </div>    
+    <div class="pokemon"  id="Pikachu">
+        <h3>皮卡丘</h3>
+        <img src="image/Pokemon/025.png" alt="">
+    </div>    
+    <div class="cat"  id="Lanlan">
+        <h3>懶懶</h3>
+        <img src="image/LanLanCat/cat.jpg" alt="">
+    </div>    
 
     <!-- Bulbasaur  => 妙蛙種子 -->
     <!-- Charmander => 小火龍 -->
