@@ -4,31 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Pseudo-class</title>
-    
+
     <!-- 底下練習table的框線設定，還有以及css的虛擬元素選擇器-->
 
     <style>
         /* 設定底下兩個tag的邊框
            1.  table 的 border，2px solid red 
            2.  td 的 border，2px dotted orange */
+        table {
+            border: 2px solid red;
+            /* border-collapse: separate; */
+            border-spacing: 1rem;
+        }
 
         /* 3.  到 w3school 網頁，查詢border-collapse & border-spacing 這個屬性的用法，並且設定在 table 裡面試試看 */
         /* 4.  在 table 裡面 設定 border-collapse: collapse 時， border-spacing 是否有設定成功? */
-        
+
         /* 5.  在 td 裡面 設定  border-width: 0px 2px  以及 border-width: 2px 0px  觀察畫面變化 */
-        
+        td {
+            border: 2px dotted orange;
+            /* border-color: orange; */
+            /* border-style: dotted;
+            /* border-width: 2px;
+            border-bottom-style: dotted;
+            border-bottom-color: orange; */
+            border-width: 0px 2px;
+            /**上下、左右**/
+
+        }
+
         /* 6.  設定 tr 的 border，只要底線，設定為2px dashed blue */
         /* 7.  若 tr 的 border 設定不成功，試試看加上display: block  */
+        tr {
+            border-bottom-style: dotted;
+            border-bottom-color: blue;
+            border-bottom-width: 2px;
+            display: block;
+
+        }
 
         /* 8.  移除最後一個tr的底線 */
+        tr:last-child{
+            border:0;
+        }
 
         /* 9.  設定 td:last-child { border-right: 0 ; } 觀察畫面變化 */
-
+        td:last-child { border-right: 0 ; }
         /* 10. 設定 td:first-child, td+td { border-left: 0; } 觀察畫面變化 */
-
+        td:first-child,td+td { border-left: 0; }
         /* 11. 設定不是第一列，背景顏色為 aqua */
-
+        tr:not(:First-child){
+            background-color: aqua;
+        }
         /* 12. 設定第四列，背景顏色為 blueviolet */
+        tr:nth-child(4){
+            background-color: blueviolet;
+        }
 
     </style>
 

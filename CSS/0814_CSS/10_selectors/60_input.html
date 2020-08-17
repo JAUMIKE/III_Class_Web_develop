@@ -6,11 +6,19 @@
     <style>
         /* 10. 改變滑鼠經過 radio 的樣式
                cursor: pointer */
-
+        input[type="radio"]{
+            cursor: pointer;
+           
+        }
 
         /* 30. :valid 驗證通過時的樣式設定 */
-
+        input:valid{
+            background-color: lightblue;
+        }
         /* 40. :invalid 驗證不通過時的樣式設定 */
+        input:invalid{
+            border-color: red;
+        }
     </style>
 </head>
 
@@ -19,9 +27,10 @@
     <h3>查詢 css 是否適用於某個瀏覽器：<a href="https://caniuse.com/">https://caniuse.com/</a></h3>
 
     <!-- 10. 在這裡加入一個 單選選單 -->
-
+    <input type="radio" id="aaa">
+    <label for="aaa">選單一</label><br>
 
     <!-- 30. 在這裡加入一個 type為email 的輸入框 -->
-
+    <input type="email" placeholder="test@gmail.com">
 
 </body>

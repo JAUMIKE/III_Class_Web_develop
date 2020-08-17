@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* *  */
+        /* ~ ==> 單字 完全符合 */
+        /* | ==> 開頭 or 開頭- */
+       h1[class |="c1"]{
+           color: lightpink;
+       }
+       /* h1[class *="c1"]{
+           color: lightpink;
+       }
+       h1[class ~="c1"]{
+           color: lightpink;
+       } */
+    </style>
+</head>
+
+<body>
+    <h1 class="c1">Apple</h1>
+    <h1 class="c1-c2">Bee</h1>
+    <h1 class="c1 c2">Cat</h1>
+    <hr>
+    <h1 class="c0 c1">Dog</h1>
+    <h1 class="c0-c1">Egg</h1>
+</body>
+
+</html>

@@ -6,14 +6,24 @@
     <title>Attribute selectors</title>
 
     <style>
-        /* 10. a 元素 href 屬性 為 http 開頭，將 字體大小調整為 2rem */
-       
+        /* 10. a 元素 href 屬性為 http 開頭 (^)，將 字體大小調整為 2rem */
+       a[href^="http"]{
+        font-size:2rem;
+       }
         /* 20. a 元素 href 屬性 包含 pseudo 文字，將 文字顏色設定為 tomato */
-       
-        /* 30. a 元素 href 屬性 為 selectors.asp ，將 背景顏色設定為 lightblue */
-       
+       a[href*="pseudo"]{
+           color:tomato;
+       }
+        /* 30. a 元素 href 屬性 為 selectors.asp ，結尾($)將 背景顏色設定為 lightblue */
+       a[href$="selectors.asp"]{
+           background-color: lightblue;
+       }
         /* 40. a 元素 target  完全等於 _blank， 移除文字底線 */
-       
+        a[target="_blank"]{
+            text-decoration: none;
+
+        }
+
     </style>
 
 </head>

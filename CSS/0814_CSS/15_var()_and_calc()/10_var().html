@@ -6,11 +6,26 @@
 
     <style>
         /* 10. 在 :root 中設定 --a-color: green;  觀察畫面的變化*/
-        
+        /* 利用--宣告變數 */
+        :root{
+            --mycolor:green;
+            --myfontFamily: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
 
         /* 20. 取得在 :root 中設定的變數值 */
         /*      20-1. 選擇 p 標籤 設定 color: brown; 觀察畫面的變化*/
         /*      20-2. 選擇 a 標籤 設定 color: var(--a-color); 觀察畫面的變化 */
+        p{
+            color:var(--mycolor);
+        }
+        a{
+            color: var(--mycolor);
+            text-decoration: none;
+        }
+        em{
+            font-family: var(--myfontFamily);
+        }
+
     </style>
 </head>
 
@@ -24,7 +39,7 @@
     <hr>
 
     <p>測試 :root 中的變數</p>
-
+    <em>AAAABBBBB</em>
 </body>
 
 </html>
