@@ -15,13 +15,26 @@
 
         /* 完成一個步驟後，請先觀察畫面變化，再執行下一個步驟 */
         /* 1. 加上 10px 的 border */
-        #div2 {}
+        #div2 {
+            /* 超出範圍 */
+            border: 10px solid black;
+        }
 
         /* 2. 加上 10px的 border 還有 box-sizing: border-box */
-        #div3 {}
+        #div3 {
+            /* 加上border-box */
+            box-sizing: border-box ;
+            border: 10px solid black;
+        }
 
         /* 3. 加上 10px的 border 還有 padding 50px */
-        #div4 {}
+        #div4 {
+            border: 10px solid black;
+            /* 加上padding會超出範圍 */
+            padding: 50px;
+            /* 加上box-sizing會正常 */
+            box-sizing: border-box;
+        }
 
         /* 4. 加上 10px的 border 還有 padding 50px 以及 box-sizing: border-box  */
         #div5 {}
@@ -35,8 +48,9 @@
     <hr>
     <h3>width指的是哪一段?</h3>
     <h3>Ans:</h3>
-    <h3>box-sizing: content-box, width = ?? </h3>
-    <h3>box-sizing: border-box, width = ?? </h3>
+    <h3>box-sizing: content-box, width = ??  </h3>
+    <!-- 上述問題為 content + padding + border -->
+    <h3>box-sizing: border-box, width = content + padding + border </h3>  
     <img src="img/box.jpg" alt="">
 
     <hr>

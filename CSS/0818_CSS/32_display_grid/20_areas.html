@@ -14,13 +14,26 @@
             background-color: lightskyblue;
 
             /* 20. 加入 display: grid; 和 padding: 10px; */
+            display: grid;
+            padding: 10px;
             
-            /* 30. 設定框限 column-gap 左右、row-gap 上下 距離*/
-            
+            /* 30. 設定框線 column-gap 左右、row-gap 上下 距離*/
+            /* column-gap: 10px; */
+            row-gap: 10px;
+
             /* 31. 可以透過 grid-gap 同時設定 column-gap 和 row-gap */
+            grid-gap:10px;
 
-
+            
             /* 40. grid-template-areas 賦予網格名稱*/
+            grid-template-areas: 
+            "header header header header"
+            "side   side   .      ."
+            "side   side   .      ."
+            "test   test   test   .";
+         
+            
+
             /*     a. 賦予網格名稱時候，會自動分割 column */
             /*     b. 可以使用 . 來代替未命名的空間 */
 
@@ -28,11 +41,20 @@
 
         .item1 {
             /* 50. 透過 grid-area 指定選取到的項目，要放到網格的哪一個位置 */
+            grid-area: header;
+        
         }
 
         .item2 {
             /* 51. 透過 grid-area 指定選取到的項目，要放到網格的哪一個位置 */
+            grid-area: side;
         }
+        .item3{
+            grid-area: test;
+        }
+        /* .item4{
+            grid-area: test2;
+        } */
     </style>
 </head>
 
@@ -45,8 +67,8 @@
     <div class="grid-container">
         <div class="item1">1</div>
         <div class="item2">2</div>
-        <div>3</div>
-        <div>4</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
         <div>5</div>
         <div>6</div>
         <div>7</div>

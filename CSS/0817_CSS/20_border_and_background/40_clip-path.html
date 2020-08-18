@@ -6,25 +6,26 @@
 
     <style>
         div {
-            width: 250px;
+            width: 550px;
             height: 250px;
-            background: lightcoral;
+            background: lightblue;
             display: inline-block;
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 31% 50%);
         }
 
         /* 10. 透過 clip-path: polygon() 在網頁上取得三角形區塊 */
         .demo2 {
-
+            clip-path: polygon(100% 0, 0 55%, 100% 100%);
         }
 
         /* 20. 透過 clip-path: circle() 在網頁上取得圓形區塊 */
         .demo3 {
-
+            clip-path: circle(50% at 50% 50%);
         }
 
         /* 30. 透過 clip-path: polygon() 在網頁上取得多邊形區塊 */
         .demo4 {
-
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
         }
     </style>
 </head>

@@ -19,16 +19,25 @@
     <h3> display:inline-block 直譯：在一行裡面的區塊。<br>
         試試看，在 Red、Green、Blue 的 div 裡面加上 style="display:inline-block;" </h3>
     <div class="demo">
-        <div id="reddiv_B">Red</div>
-        <div id="greendiv_B">Green</div>
-        <div id="bluediv_B">Blue</div>
+        <div id="reddiv_B"  style="display:inline-block;">Red</div>
+        <div id="greendiv_B"  style="display:inline-block;">Green</div>
+        <div id="bluediv_B"  style="display:inline-block;">Blue</div>
+    </div>
+    <hr>
+    <div class="demo" style="font-size: 0px;">
+        <div id="reddiv_B"  style="display:inline-block; ">Red</div>
+        <div id="greendiv_B"  style="display:inline-block; margin-left: -4px;">Green</div>
+        <div id="bluediv_B"  style="display:inline-block;">Blue</div>
     </div>
 
 
     <pre>
         為什麼在div之間有空格？
+             <!-- div 加上 style="font-size: 0px; 就可以縮小 -->
             1. 試試看在 demo2的div 加上style="font-size: 0px; letter-spacing: 0px;word-spacing: 0px;"
+            <!-- 另一種做法 -->
             2. 試試看在 綠色的div 裡面加上margin-left: -4px;
+            
     </pre>
     
 </body>

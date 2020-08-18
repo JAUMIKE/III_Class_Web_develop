@@ -27,12 +27,24 @@
 
         /* 10. grid-column 透過開始線段和結束線段放置元素 */
         .item1 {
-
+            /* grid-column: 1/4; */
+            /* 另一種寫法 */
+            /* grid-column-start: 1; */
+            /* grid-column-end: 4; */
+            grid-column: 1/4;
         }
 
         /* 20. grid-row 透過開始線段和結束線段放置元素 */
-        .item3 {
-
+        /* .item3 {
+            grid-row: 2/4;
+            /* grid-column: 1/4; */
+            
+            /* grid-row-start: 2;
+            grid-row-end: 4; 
+        } */
+        .item2{
+            grid-row: 2/4;
+            grid-column: 3/4;
         }
     </style>
 </head>
@@ -47,7 +59,7 @@
 
     <div class="grid-container">
         <div class="item1">1</div>
-        <div>2</div>
+        <div class="item2">2</div>
         <div class="item3">3</div>
         <div>4</div>
         <div>5</div>

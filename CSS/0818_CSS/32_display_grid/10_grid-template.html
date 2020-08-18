@@ -6,16 +6,23 @@
     <style>
         .grid-container>div {
             border: 1px solid black;
-            margin: 5px;
+            margin: 10px;
         }
 
         .grid-container {
             /* 10. 設定 display: grid，改變指定元素的顯示方式 */
-
+            display: grid;
             /* 20. grid-template-columns 指定 欄
                    grid-template-rows    指定 列 */
-
-            /* 30. 其他設定：auto、fr、repeat(重覆幾次, 值1, 值2...) */
+            /* grid-template-columns: 100px 100px 100px; */
+            
+            grid-template-rows: 33% 33% 33%;
+            /* 30. 其他設定：auto、fr、repeat(重覆幾次, 值1 值2...) */
+            grid-template-columns: auto auto;
+            /* 寫法2 */
+            /* grid-template-columns: 1fr 1fr */
+            /* 寫法3 */
+            /* grid-template-columns: repeat(2,1fr 4fr)  */
         }
     </style>
 </head>
