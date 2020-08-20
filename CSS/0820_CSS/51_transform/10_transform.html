@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+            font-size: 5rem;
+            display: inline-block;
+            background-color: lightskyblue;
+        }
+
+        .first {
+            background: radial-gradient(circle, white 0%, lightcoral 10%);
+        }
+
+        .second {
+            background: radial-gradient(circle, white 0%, lightskyblue 10%);
+
+            /* 10. 練習和測試 2D 相關的設定值 */
+
+            /* transform: translateX(100px); */
+            /* transform: translateY(50px); */
+            /* transform: translate(50px, 50px); */
+
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+
+            /* transform: rotate(20deg); */
+
+            /* transform: skewX(20deg); */
+            /* transform: skewY(20deg); */
+            /* transform: skew(20deg, 20deg); */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h3><a href="http://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">CSS 2D Transforms</a></h3>
+    <h3><a href="https://www.w3schools.com/cssref/css3_pr_transform.asp">CSS transform Property</a></h3>
+
+    <h3>
+        <ul>
+            <li>transform:translate(x,y); </li>
+            <li>transform:translateX(n); </li>
+            <li>transform:translateY(n); </li>
+            <li>transform:scale(x,y); </li>
+            <li>transform:scaleX(n); </li>
+            <li>transform:scaleY(n); </li>
+            <li>transform:skew(x-angle,y-angle); </li>
+            <li>transform:skewX(angle); </li>
+            <li>transform:skewY(angle); </li>
+            <li>transform:rotate(angle); </li>
+        </ul>
+    </h3>
+    <hr>
+
+    <div class="first"></div>
+    <div class="second"></div>
+
+</body>
+
+</html>
