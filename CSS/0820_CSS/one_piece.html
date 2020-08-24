@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows: 960px;
+            
+        }
+        .sectionRight{
+            /* border:1px solid black; */
+            position: relative;
+        } 
+        .sectionLeft{
+            background-image: url(//C:/Users/JPC/WebDevelop_WorkSpace/image/Animation01.jpg);
+        }  
+        article{
+            /* position: absolute; */
+            
+            /* left: 0 ;right: 0; top: 0; bottom: 0;  */
+            /* margin:auto; */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class='grid_container'>
+        <section class="sectionLeft">
+            aaa
+        </section>
+        <section class="sectionRight">
+            <article>
+                <p>測試訊息</p>
+                <img src="http://placehold.it/150x50" alt="">
+
+            </article>
+        </section>
+
+
+    </div>
+</body>
+</html>

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <title>滑鼠移過，會有文字顯示的效果</title>
     <style>
-        #content1 {
+        #content1{
             width: 477px;
 
             /*4. 這裡要先變成?底下的元素才能依附上來*/
+           position: relative;
         }
 
         img {
@@ -18,14 +19,27 @@
         /*換成#img:hover + .desc是不是一樣的效果?*/
         #content1:hover>.desc {
             /*3. 試試看用display或者用visibility*/
+            /* visibility: hidden; */
+            position: absolute;
+            bottom:0px;
+            background-color: white;
+            height: 100px;
+            width: 100%;
+            /* opacity: 0.4; */
+            text-align: center;
+            visibility: visible;
+           
+           
+            /* font-size: 50px; */
         }
 
         .desc {
             background-color: white;
             opacity: 0.4;
-
+           
             /*2. 試試看用display或者用visibility*/
-
+            visibility: hidden;
+            
             /*1. 要怎麼樣跳脫現有的元素流找到定位?*/
         }
     </style>

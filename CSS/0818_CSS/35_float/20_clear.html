@@ -17,11 +17,23 @@
 
         /* 30. 測試三種可以取消 float 的方法  */
         /*     a. 在第二個 hr 設置 clear: both;  */
-
+        hr:nth-of-type(2){
+            /* 方法一 */
+            /* clear: both;  */
+        }
         /*     b. 在 .group1 加入 overflow: hidden; */
-
+        .group1{
+            /* 方法一 */
+            /* overflow: auto; */
+        }
         /*     c. 透過虛擬元素 */
-
+        /* 方法二 */
+        .group1::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
     </style>
 
 </head>

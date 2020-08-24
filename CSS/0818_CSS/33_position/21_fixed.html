@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/position.css">
     <style>
-        #reddiv {
-
+        #pic01 {
+            position: fixed;
+            bottom:30px;
+            right: 30px;
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
             /* 1. 試試看在這裡，加入三個屬性設定，可以模仿網頁上，將圖片固定在右下角? */
 
             /* 2. 在這邊設定一張圖片並調整大小 */
+        }
+
+        #reddiv{
+            background-image: url(img/onepiece20th_logo.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: fixed;
+            bottom:30px;
+            right: 30px;
+            background-position: center;
+
         }
     </style>
 </head>
@@ -26,8 +42,8 @@
         試著在 紅色div 修改position的屬性後，加上 top、bottom、left、right 看看有什麼變化吧!!
 
         <!-- 3. 加上超連結 https://one-piece.com/special/20th/，就和網頁一樣了! -->
-        <div id="reddiv">Red</div>
-
+        <!-- <a href="https://one-piece.com/special/20th/" target="_blank"><img src="img/onepiece20th_logo.png" alt="" id="pic01"></a> -->
+        <a href="https://one-piece.com/special/20th/" target="_blank"><div id="reddiv"></div></a>
         <div id="greendiv">Green</div>
         <div id="bluediv">Blue</div>
     </div>
