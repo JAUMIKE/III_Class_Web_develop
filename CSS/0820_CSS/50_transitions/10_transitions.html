@@ -11,6 +11,15 @@
         }
 
         /* 10. 當滑鼠經過 div 的時候，加入圓角的樣式 */
+        div:hover{
+            border-radius: 150px;
+            width: 500px;
+            background-color: lightgreen;
+            transition-duration: 2s;
+            /*屬性之間要留空格 */
+            transition-property:  background-color width border-radius;
+            transition-timing-function: ease-in-out;
+        }
 
         /* 20. 加入 transition 的設定 */
 

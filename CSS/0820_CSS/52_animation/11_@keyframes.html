@@ -19,9 +19,22 @@
         }
 
         /* 10. 透過 @keyframes 定義一組動畫樣式  */
+        @keyframes apple{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
       
         /* 20. 指定元素套用動畫 */
-        
+        .demo1{
+            animation-name: apple;
+            animation-duration: 2s;
+            animation-iteration-count:1;
+            /* animation-fill-mode:forwards; */
+        }
     </style>
 
 </head>

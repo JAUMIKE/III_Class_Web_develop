@@ -10,10 +10,44 @@
     <style>
         
         /* 10. @media screen：隨著裝置畫面不同，網頁會自動對應不同的css*/
+        /* div{
+            width: 100%;
+           
+            background-color: lightcoral;
 
+        } */
+        
         /* min-width：表示設定數值「大於等於」、「以上」*/
         /* max-width：表示設定數值「小於等於」、「以下」 */
-        
+        @media screen and (min-width: 1000px) {
+            div{
+                
+                background-color: lightcoral;
+            }
+            div::before{
+                content:'width > 1000'
+            }
+
+        }
+        @media screen  and (min-width: 700px) and (max-width: 1000px){
+            div{
+                
+                background-color: lightgreen;
+            }
+            div::after{
+                content:'700 < width < 1000'
+            }
+
+        }
+        @media screen and (max-width: 700px) {  
+            div{
+                background-color: lightblue;
+            }
+            div::after{
+                content:' width <700'
+            }
+            
+        }
     </style>
 </head>
 
@@ -23,6 +57,7 @@
     <h3><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">https://www.w3schools.com/css/css_rwd_mediaqueries.asp</a></h3>
 
     <div></div>
+   
 
 </body>
 

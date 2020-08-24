@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="animate.css">
+
+    <style>
+
+        div:nth-of-type(2){
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            margin-left: 100px;
+            position: relative;
+            transform: rotate(45deg);
+            border-radius: 150px;
+            /* 動畫引用 */
+            animation-name: mymove;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            
+
+
+        }
+        /* 定義動畫內容 */
+        @keyframes mymove{
+          0% {top:10px}
+
+          
+
+          50% {
+              /* border-bottom-right-radius: 100px; */
+               top:80px;}
+           
+          100% {
+              top:10px
+          }     
+            }
+        img{
+            width: 200px;
+            height: 200px;
+            margin-top:199px
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div><img src="img/hand.jpg" alt=""></div>
+    <div class="a0001">123</div>
+    
+</body>
+</html>
