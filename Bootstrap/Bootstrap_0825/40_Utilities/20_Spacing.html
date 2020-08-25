@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+
+    <style>
+        .box {
+            height: 25vh;
+            background-color: lightcoral;
+            margin-bottom: 10px;
+        }
+
+        .box>div {
+            background-color: lightskyblue;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h4>官方網站</h4>
+        <h4><a
+                href="https://getbootstrap.com/docs/4.4/utilities/spacing/">https://getbootstrap.com/docs/4.4/utilities/spacing/</a>
+        </h4>
+        <h4>Spacing Utilities</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_spacing&stacked=h">https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_spacing&stacked=h</a>
+        </h4>
+
+        <hr>
+
+
+        <!-- 10. 建立巢套的 div 元素
+                 a. 外層 div 使用 .box 類別；在上方 style 區段定義寬度和背景底色等
+                 b. 內層 div 使用 bootstrap 4 提供的 .w-* 類別 -->
+
+            <div class="box">
+                <div class="w-100">Apple-100</div>
+                <div class="w-75">Apple-75</div>
+                <div class="w-50">Apple-50</div>
+                <div class="w-25">Apple-25</div>
+                <div class="w-auto">Apple-auto</div>
+            </div>
+            <hr>
+        <!-- 20. 複製步驟 10 ，內層 div 改為使用 bootstrap 4 提供的 .h-* 類別 -->
+        <!-- <div class="box">
+            <div class="h-100">Apple</div>
+            <div class="h-75">Apple</div>
+            <div class="h-50">Apple</div>
+            <div class="h-25">Apple</div>
+        </div> -->
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <!-- 30. 同上，測試 bootstrap 4 提供的 .p-* 類別 -->
+        
+        <div class="box">
+            <div class="pt-1">Apple</div>
+            <div class="pb-2">Apple</div>
+            <div class="pl-3">Apple</div>
+            <div class="p-4">Apple</div>
+        </div>
+        <hr>
+        <!-- 40. 同上，測試 bootstrap 4 提供的 .m-* 類別 -->
+        <div>
+            <div class="box">
+                <div class="m-1">Apple</div>
+                <div class="m-2">Apple</div>
+                <div class="m-3">Apple</div>
+                <div class="m-4">Apple</div>
+            </div>
+        </div>
+
+        <!-- 50. 測試 bootstrap 4 提供的 .m-auto 類別 -->
+        <div class="box">
+            <div class="w-25 m-auto h-50">apple</div>
+        </div>
+        
+        <!-- 60. 觀察 mx-auto 的設定 -->
+        <div class="box">
+            <div class="mx-auto w-25">apple</div>
+        </div>
+        <hr>
+      
+
+    </div>
+</body>
+
+</html>

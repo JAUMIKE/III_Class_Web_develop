@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+
+    <style>
+        .box {
+            height: 10vh;
+        }
+
+        .box>div {
+            display: inline-block;
+        }
+
+        div[class*='rounded'] {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h4>官方網站</h4>
+        <h4><a
+                href="https://getbootstrap.com/docs/4.4/utilities/borders/">https://getbootstrap.com/docs/4.4/utilities/borders/</a>
+        </h4>
+        <h4>Borders</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_borders&stacked=h">https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_borders&stacked=h</a>
+        </h4>
+
+        <hr>
+
+        <!-- 10. 為什麼這樣設定div不會出現? -->
+        <div class="w-25 h-100 bg-success">apple</div>
+
+        <div class="box">
+            <div class="w-25 h-100 bg-success">
+                aa
+            </div>
+        </div>
+        
+        <hr>
+
+        <!-- 20. 複製貼上官網的範例，為什麼 border 測試不出來 -->
+       
+            <span class="border">A</span>
+            <span class="border border-0">B</span>
+            <span class="border border-top-0">C</span>
+            <span class="border border-right-0">D</span>
+            <span class="border border-bottom-0">E</span>
+            <span class="border border-left-0">F</span>
+       
+          
+
+        <hr>
+
+        <!-- 25. 設定邊框圓角 -->
+        <!--     .rounded-top    | .rounded-right | rounded-bottom | rounded-left -->
+        <!--     .rounded-circle | .rounded-pill -->
+        <div class="box">
+            <!-- .border、.border-danger 要一起出現才會生效 -->
+            <div class="h-100 w-100 bg-info rounded-pill border border-danger"></div>
+        </div>
+
+        <hr>
+
+        <!-- 26. 設定不同的邊線顏色 -->
+
+        <hr>
+
+    </div>
+
+</body>
+
+</html>

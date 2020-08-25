@@ -22,6 +22,19 @@
         <!-- 10. 在不同的裝置螢幕下，載入不同的圖片-->
         <!--    a. 先製作大中小不同尺寸的素材 -->
         <!--    b. 再透過 <picture> <source srcset="" media=""> <img srcset=""> 等 tag 實現 -->
+            <picture>
+                <!-- 隨裝置大小動態載入圖片，看網路寬頻 -->
+                <source media="(min-width: 1400px)" srcset="https://dummyimage.com/2000x700/00ffe6/000">
+                <source media="(min-width: 768px)" srcset="https://dummyimage.com/1400x700/00ffe6/000">
+                <source media="(min-width: 567px)" srcset="https://dummyimage.com/800x700/00ffe6/000">
+                <img srcset="https://dummyimage.com/700x700/00ffe6/000" alt="">
+            </picture>
+            <!-- 用CSS渲染，看瀏覽器效能-->
+            <div style="width: 500px;">
+                <img style="width: 100%;" src="../_image/sunny.jpg" alt="">
+            </div>
+
+
     </div>
 
 </body>

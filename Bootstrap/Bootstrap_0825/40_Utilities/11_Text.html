@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h4>官方網站</h4>
+        <h4><a
+                href="https://getbootstrap.com/docs/4.0/utilities/text/#text-wrapping-and-overflow">https://getbootstrap.com/docs/4.0/utilities/text/#text-wrapping-and-overflow</a>
+        </h4>
+
+        <hr>
+
+        <!-- 10. 改變字型的外觀： 
+            .font-weight-bold
+            .font-weight-normal
+            .font-weight-light
+            .font-weight-italic
+        -->
+        <p class="font-weight-bold">An apple a day keeps the doctor away</p>
+        <p class="font-weight-normal">An apple a day keeps the doctor away</p>
+        <p class="font-weight-light">An apple a day keeps the doctor away</p>
+        <p class="font-weight-italic">An apple a day keeps the doctor away</p>
+
+
+        <!-- 15. 設定大小寫： 
+            .text-lowercase 
+            .text-uppercase
+            .text-capitalize 
+        -->
+        <p class="text-lowercase ">An apple a day keeps the doctor away</p>
+        <p class="text-uppercase">An apple a day keeps the doctor away</p>
+        <p class="text-capitalize ">An apple a day keeps the doctor away</p>
+
+        <!-- 20. 文字位置設定： 
+            .text-left 
+            .text-center
+            .text-right
+        --> 
+        <p class="bg-success text-center">Apple</p>
+        
+        <!-- 這裡壞掉 -->
+        <span class="bg-warning text-center">
+            Bee
+        </span>
+
+
+        <p class="text-left">An apple a day keeps the doctor away</p>
+        <p class="text-center">An apple a day keeps the doctor away</p>
+        <p class="text-right">An apple a day keeps the doctor away</p><hr>
+
+
+        <!-- 25. 在不同的螢幕寬度上，設定不同的對齊方式 -->
+        <!--     * 大於 * 的概念 -->
+
+        <p class="text-sm-right">Apple</p>
+        <p class="text-md-right">Bee</p>
+        <p class="text-lg-right">Cat</p>
+        <p class="text-xl-right">Dog</p><hr>
+
+        <!-- 30. 當文字溢出時，使用「…」來表達：.text-truncate -->
+        <div class="row">
+            <!-- 設定寬度比例後text-truncate才會生效 -->
+            <div class="col-2 text-truncate">
+                Apple. Apple. Apple. Apple. Apple. 
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
