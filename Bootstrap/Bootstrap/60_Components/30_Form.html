@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h4>官方網站</h4>
+        <h4><a
+                href="https://getbootstrap.com/docs/4.3/components/forms/">https://getbootstrap.com/docs/4.3/components/forms/</a>
+        </h4>
+        <h4><a
+                href="https://getbootstrap.com/docs/4.3/components/input-group/">https://getbootstrap.com/docs/4.3/components/input-group/</a>
+        </h4>
+
+        <h4>Bootstrap Form Builder</h4>
+        <h4><a href="https://bootstrapformbuilder.com/">https://bootstrapformbuilder.com/</a></h4>
+
+        <h4>Bootstrap 4 Forms</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/bootstrap_forms.asp">https://www.w3schools.com/bootstrap4/bootstrap_forms.asp</a>
+        </h4>
+        <h4>Bootstrap 4 Form Inputs</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp">https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp</a>
+        </h4>
+        <h4>Bootstrap 4 Inputs Group</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/bootstrap_forms_input_group.asp">https://www.w3schools.com/bootstrap4/bootstrap_forms_input_group.asp</a>
+        </h4>
+        <h4>Bootstrap 4 Custom Forms</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/bootstrap_forms_custom.asp">https://www.w3schools.com/bootstrap4/bootstrap_forms_custom.asp</a>
+        </h4>
+
+        <hr>
+
+        <form>
+            <!-- 10. 請配合官網的範例，依序將底下類別加入至對應位置，查看改變 -->
+            <!--     (底下程式碼來自官方網站) -->
+            <!--    a. 在 <div> 加入 .from-group-->
+            <!--    b. 在 <input type="email">    加入 .form-control  -->
+            <!--    c. 在 <small> 加入 .form-text  -->
+            <!--    d. 在 <input type="checkbox"> 加入 .form-check-input  -->
+            <!--    e. 在 包含 checkbox 的 <div> 加入   .form-group .form-check -->
+
+            <div>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div>
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div>
+                <input type="checkbox" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+
+            <!-- 20. <input type="text">  加入 .form-control-plaintext 取消邊框設定-->
+            <div class="form-group">
+                <input type="text" placeholder="邊框預設一直都在" name="text1">
+            </div>
+            
+            <!-- 30. 透過 .input-group 改變元素顯示方式 -->
+            <!--     .input-group         -->
+            <!--     .input-group-prepend |  .input-group-append -->
+            <!--     .input-group-text    -->
+
+
+            <!-- 40. 底下範例來自官網，試試看移除掉 .custom-control-input  -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                <label class="custom-control-label" for="customCheck2">?!</label>
+            </div>
+        </form>
+
+        <hr>
+
+    </div>
+
+</body>
+
+</html>

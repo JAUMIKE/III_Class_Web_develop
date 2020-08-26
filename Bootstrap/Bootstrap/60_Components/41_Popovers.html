@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h4>官方網站</h4>
+        <h4><a
+                href="https://getbootstrap.com/docs/4.0/components/popovers/">https://getbootstrap.com/docs/4.0/components/popovers/</a>
+        </h4>
+        <h4>Bootstrap 4 Popover</h4>
+        <h4><a
+                href="https://www.w3schools.com/bootstrap4/bootstrap_popover.asp">https://www.w3schools.com/bootstrap4/bootstrap_popover.asp</a>
+        </h4>
+
+        <hr>
+
+        <!-- 10. 設置一個按鈕，並加入底下屬性 -->
+        <!--     a. data-toggle="popover" -->
+        <!--     b. title="popover header" -->
+        <!--     c. data-content="popover content " -->
+
+
+        <!-- 20. 加入屬性 data-placement，修改提示位置 -->
+        <!--     data-placement= "top" | "right" | "bottom" | "left" -->
+
+        <!-- 30. 改變觸發 popover 的形式：滑鼠經過時顯示 -->
+        <!--     data-trigger="hover" -->
+       
+    </div>
+
+    <script>
+        // popover 需要加入一些 指令才能順利完成任務
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+</body>
+
+</html>
