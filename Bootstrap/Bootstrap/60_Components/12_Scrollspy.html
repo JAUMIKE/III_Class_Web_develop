@@ -9,20 +9,98 @@
         <script src="../_js/jquery.min.js"></script>
         <script src="../_js/popper.min.js"></script>
         <script src="../_js/bootstrap.min.js"></script>
+        <style>
+
+        </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#mylist">
 
-        <div class="container">
+        <!-- <div class="container">
                 <h4>官方網站</h4>
                 <h4><a href="https://getbootstrap.com/docs/4.0/components/scrollspy/">https://getbootstrap.com/docs/4.0/components/scrollspy/</a>
                 </h4>
                 <h4>Bootstrap 4 Scrollspy (Advanced)</h4>
                 <h4><a href="https://www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp">https://www.w3schools.com/bootstrap4/bootstrap_scrollspy.asp</a>
                 </h4>
-                <hr>
+                <hr> -->
 
                 <!-- 10. 設定佈局，畫面共兩個欄位，左側佔3等份，右側佔9等份 -->
+                <div class="container bg-dark text-white p-3 font-weight-bold" style="text-align: center;">Web Template</div>
+                <div class="row" id="mylist">
+                        <div class="col-3">
+                                        <ul class=" nav nav-pills flex-column sticky-top mt-4" style="text-align: center;">
+                                                <li><a href="#github" class="nav-link">Github</a></li>
+                                                <li><a href="#twitter" class="nav-link">Twitter</a></li>
+                                                <li><a href="#examples" class="nav-link">Examples</a></li>
+                                                <li><a href="#about" class="nav-link">About</a></li>
+                                        </ul>
+
+
+                        </div>
+                        <div class="col-9">
+                                <div id="github" class="container tab-pane"><br>
+                                        <h3 class="text-capitalize">GitHub</h3>
+                                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Nunc euismod tellus sed tellus bibendum, tristique dapibus nunc
+                                                maximus. Donec in enim sem. Donec tellus massa, viverra sit amet pretium
+                                                a, sollicitudin ac sem. Praesent sed volutpat augue, sit amet maximus
+                                                urna. Donec pharetra eros ac ultrices porta. Cras mollis eget felis non
+                                                pulvinar. Donec vel augue et turpis hendrerit vulputate. Nunc eget purus
+                                                at tellus sollicitudin pharetra sed eget nisi. Duis purus ligula, mattis
+                                                vitae sodales tempus, imperdiet sit amet risus. Aliquam pellentesque
+                                                luctus justo sit amet efficitur.</p>
+                                </div>
+                                <hr>
+                                <br><br>
+                                <div id="twitter" class="container tab-pane"><br>
+                                        <h3 class="text-capitalize">Twitter</h3>
+                                        <p class="text-capitalize">Nulla tincidunt ornare massa. Morbi molestie, ligula
+                                                id elementum elementum, nisl lorem iaculis tellus, at ultrices augue est
+                                                eu metus. Morbi convallis ante eget purus consequat posuere. Duis porta
+                                                purus sapien, at lacinia velit pharetra sagittis. Ut augue velit, mollis
+                                                et ex quis, commodo rhoncus nisi. Maecenas eleifend aliquam urna. Aenean
+                                                ultricies egestas pretium.</p>
+                                </div>
+                                <hr>
+                                <br><br>
+                                <div id="examples" class="container tab-pane"><br>
+                                        <h3 class="text-capitalize">Examples</h3>
+                                        <p class="text-capitalize">Aliquam accumsan venenatis eros id molestie. Morbi
+                                                nec eros sed mauris consectetur laoreet ut non sapien. Praesent eleifend
+                                                ex ullamcorper dolor cursus aliquet. Nullam pellentesque erat nisi, nec
+                                                luctus massa tempor at. Ut lectus turpis, vestibulum vitae turpis nec,
+                                                rhoncus fermentum augue. Praesent placerat a magna maximus suscipit.
+                                                Suspendisse varius elit eget turpis aliquam, non pulvinar ipsum
+                                                scelerisque. Aenean blandit orci at imperdiet porttitor. Curabitur
+                                                dignissim non quam non faucibus. Sed fringilla ligula ligula. Nam non
+                                                tempus nisi. Mauris auctor eu turpis ac ornare.</p>
+                                </div>
+                                <hr>
+                                <br><br>
+                                <div id="about" class="container tab-pane"><br>
+                                        <h3 class="text-capitalize">About</h3>
+                                        <p class="text-capitalize">Mauris pellentesque libero id tempor ornare. Aenean
+                                                non elit at orci porta condimentum. Nullam non ante ante. Fusce commodo
+                                                elit eget neque accumsan vehicula. Proin id ipsum scelerisque, sagittis
+                                                mi vel, congue arcu. Ut fermentum, nisl fringilla mattis suscipit, nisl
+                                                sapien eleifend risus, at venenatis justo nibh a tortor. Suspendisse
+                                                elementum, magna eu ornare pulvinar, elit tortor ultrices erat, at
+                                                tempus lectus nisi sit amet tortor. Vivamus nec erat eget purus interdum
+                                                bibendum vitae sit amet metus. Cras sem eros, porta aliquet ornare eu,
+                                                pulvinar in diam. Orci varius natoque penatibus et magnis dis parturient
+                                                montes, nascetur ridiculus mus. Proin semper felis id urna porttitor,
+                                                quis interdum urna facilisis.</p>
+                                </div>
+                        </div>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
 
                 <!-- 20. 畫面左側設定項目清單： GitHub 、 Twitter 、 Examples 、 About -->
                 <!-- * 改為透過 ul>li>a 元素，並且套用 .nav 相關類別 -->

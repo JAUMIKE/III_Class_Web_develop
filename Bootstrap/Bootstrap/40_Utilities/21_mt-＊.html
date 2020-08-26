@@ -18,31 +18,48 @@
             background-color: lightcoral;
 
             /* 10. 外層容器加入 padding */
-
+            /* 未加入padding前呈現margin崩塌 */
+            
+            /* padding: 100px; */
+            
             /* 20. 外層容器加入 border*/
+            /* 加入border前呈現margin崩塌  */
+            
+            /* border: 5px solid black; */
         }
         .mydiv{
             background-color: lightgreen;
 
             /* 30. 改變為  display: inline-block; */
+            /* 加入display:inline-block前呈現margin崩塌 */
+            
+            /* display: inline-block; */
         }
     </style>
 </head>
 
 <body>
-
-    <!-- 10. 請試試看加入 margin-top 樣式 -->
-
-    <div class="box">
-        <div class="mydiv">A</div>
-    </div>
-
-    <hr>
-
-    <div class="box">
-        <div class="mydiv">B</div>
-    </div>
-
+   <!-- apple 成功 ==> 
+         * 但是應該要壞掉因為body 的 display 是 block * -->
+         <div style="margin-top: 50px; background-color: blue;">Apple</div>
+         <!-- bee   成功 -->
+         <div style="margin-top: 50px;">Bee</div>
+         <hr>
+     
+         <!-- 10. 請試試看加入 margin-top 樣式 -->
+         
+         <!-- 採用 CSS ==> 失敗 -->
+         <div class="box">
+             <div class="mydiv" style="margin-top: 100px;">A</div>
+         </div>
+     
+         <hr>
+     
+         <!-- 採用 Bootstrap ==> 失敗 -->
+         <div class="box">
+             <div class="mydiv mt-3">B</div>
+         </div>
+     
     <!-- 20. 官方文件 -->
     <h4>Collapsing margins</h4>
     <h4><a href="https://www.w3.org/TR/CSS21/box.html#collapsing-margins">https://www.w3.org/TR/CSS21/box.html#collapsing-margins</a></h4>

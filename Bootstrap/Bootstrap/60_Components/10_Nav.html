@@ -25,26 +25,104 @@
         <hr>
 
         <!-- 10. 加入一個 <nav> 標籤，並添加類別 .nav  -->
-       
+        <nav class="">
+            <a class="" href="#">GitHub</a>
+            <a class="" href="#">Twitter</a>
+            <a class="" href="#">Examples</a>
+            <a class="" href="#">About</a>
+        </nav>
+        <hr>
         <!-- 20. 加入 4 個超連結： GitHub 、 Twitter 、 Examples 、 About  -->
 
         <!-- 21. 超連結加入 .nav-link -->
-
+        <nav class="nav nav-fill">
+            <a class="nav-link nav-item active" href="#">GitHub</a>
+            <a class="nav-link nav-item active" href="#">Twitter</a>
+            <a class="nav-link nav-item active" href="#">Examples</a>
+            <a class="nav-link nav-item active" href="#">About</a>
+        </nav><hr>
         <!-- 25. 套用 .nav-fill -->
-    
+        
         <!-- 30. 該如何讓超連結的被選取時底色會改變? -->
         <!--     .nav-pills  以及 .active  -->
 
-
-        <!-- 40. 該如何指定這組<nav>於畫面上的位置？ -->
+        <nav class="nav nav-fill nav-pills">
+            
+            <!-- nav-pills、active要一起用才有底色效果 -->
+            <p>為narbar項目上底色</p>
+            <a class="nav-link nav-item active" href="#">GitHub</a>
+            <a class="nav-link nav-item " href="#">Twitter</a>
+            <a class="nav-link nav-item " href="#">Examples</a>
+            <a class="nav-link nav-item " href="#">About</a>
+        </nav><hr>
+        <!-- 將nav-fill 改為nav-justified -->
+        <p>調整navbar項目的大小並置中</p>
+        <nav class="nav nav-justified nav-pills justify-content-center">
+            <a class="nav-link active" href="#">GitHub</a>
+            <a class="nav-link " href="#">Twitter</a>
+            <a class="nav-link " href="#">Examples</a>
+            <a class="nav-link " href="#">About</a>
+        </nav><hr>
+        <!-- 40. 該如何指定這組<nav>於畫面上的位置？ justify-content-*-->
 
         <!-- 50. 該如何讓選單在小屏幕時，改為單欄顯示 --> 
-        
+        <p>讓navbar在某種螢幕範圍下單欄顯示</p>
+        <!-- sm、md、lg、xl -->
+        <nav class="nav nav-justified nav-pills justify-content-center flex-column flex-sm-row">
+            <a class="flex-lg-fill text-lg-center nav-link active" href="#">GitHub</a>
+            <a class="flex-lg-fill text-lg-center nav-link " href="#">Twitter</a>
+            <a class="flex-lg-fill text-lg-center nav-link " href="#">Examples</a>
+            <a class="flex-lg-fill text-lg-center nav-link " href="#">About</a>
+        </nav><hr><br>
+        <br>
+        <br>
         <!-- 60. 該如何讓導覽被點選時，出現對應的資訊？ -->
         <!--   a.  data-toggle="tab" -->
-        <!--   c.  .tab-content > .tab-pane -->
-        <!--   b.  href="#元素id" -->
-
+        <!--   b.  .tab-content > .tab-pane -->
+        <!--   c.  href="#元素id" -->
+      
+        <div class="container">
+            <h2>Toggleable Pills</h2>
+            <br>
+            <!-- Nav pills -->
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#home">GitHub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu1">Twitter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu2">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu3">About</a>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="">
+              <div id="home" class="container tab-pane active"><br>
+                <h3 class="text-capitalize">GitHub</h3>
+                <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod tellus sed tellus bibendum, tristique dapibus nunc maximus. Donec in enim sem. Donec tellus massa, viverra sit amet pretium a, sollicitudin ac sem. Praesent sed volutpat augue, sit amet maximus urna. Donec pharetra eros ac ultrices porta. Cras mollis eget felis non pulvinar. Donec vel augue et turpis hendrerit vulputate. Nunc eget purus at tellus sollicitudin pharetra sed eget nisi. Duis purus ligula, mattis vitae sodales tempus, imperdiet sit amet risus. Aliquam pellentesque luctus justo sit amet efficitur.</p>
+              </div>
+              <div id="menu1" class="container tab-pane fade"><br>
+                <h3 class="text-capitalize">Twitter</h3>
+                <p class="text-capitalize">Nulla tincidunt ornare massa. Morbi molestie, ligula id elementum elementum, nisl lorem iaculis tellus, at ultrices augue est eu metus. Morbi convallis ante eget purus consequat posuere. Duis porta purus sapien, at lacinia velit pharetra sagittis. Ut augue velit, mollis et ex quis, commodo rhoncus nisi. Maecenas eleifend aliquam urna. Aenean ultricies egestas pretium.</p>
+              </div>
+              <div id="menu2" class="container tab-pane fade"><br>
+                <h3 class="text-capitalize">Examples</h3>
+                <p class="text-capitalize">Aliquam accumsan venenatis eros id molestie. Morbi nec eros sed mauris consectetur laoreet ut non sapien. Praesent eleifend ex ullamcorper dolor cursus aliquet. Nullam pellentesque erat nisi, nec luctus massa tempor at. Ut lectus turpis, vestibulum vitae turpis nec, rhoncus fermentum augue. Praesent placerat a magna maximus suscipit. Suspendisse varius elit eget turpis aliquam, non pulvinar ipsum scelerisque. Aenean blandit orci at imperdiet porttitor. Curabitur dignissim non quam non faucibus. Sed fringilla ligula ligula. Nam non tempus nisi. Mauris auctor eu turpis ac ornare.</p>
+              </div>
+              <div id="menu3" class="container tab-pane fade"><br>
+                <h3 class="text-capitalize">About</h3>
+                <p class="text-capitalize">Mauris pellentesque libero id tempor ornare. Aenean non elit at orci porta condimentum. Nullam non ante ante. Fusce commodo elit eget neque accumsan vehicula. Proin id ipsum scelerisque, sagittis mi vel, congue arcu. Ut fermentum, nisl fringilla mattis suscipit, nisl sapien eleifend risus, at venenatis justo nibh a tortor. Suspendisse elementum, magna eu ornare pulvinar, elit tortor ultrices erat, at tempus lectus nisi sit amet tortor. Vivamus nec erat eget purus interdum bibendum vitae sit amet metus. Cras sem eros, porta aliquet ornare eu, pulvinar in diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper felis id urna porttitor, quis interdum urna facilisis.</p>
+              </div>
+            </div>
+          </div>
+          <hr><br>
+          <br>
+          <br>
          
     </div>
 

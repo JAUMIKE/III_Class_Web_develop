@@ -21,19 +21,59 @@
 
         <hr>
 
-        <!-- 10. 比較 .d-flex和 .d-inline-flex 的差異 -->
-       
+        <!-- 10. 比較 .d-flex和 .d-inline-flex 的差異 d=display-->
+        123
+        <div class="d-flex p-2 bg-secondary text-white">
+            <div class="p-2 bg-info">Bootstrap 4 Flex1</div>
+            <div class="p-2 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="p-2 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        456
+        <br>
+        <hr>
+        <br>
+        123
+        <div class="d-inline-flex p-2 bg-secondary text-white">
+            <div class="p-2 bg-info">Bootstrap 4 Flex1</div>
+            <div class="p-2 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="p-2 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        456
+        <hr>
         <!-- 20. .flex-grow-0 和 flex-grow-1 有什麼差異？ 
-                是否可以設置為 flex-grow-2？ -->
- 
-        <!-- 20. .flex-row 和 .flex-row-reverse 的差異 -->
-       
-        <!-- 30. 該如何設置，可以讓外層容器佔瀏覽器寬度的一半？ -->
-       
-        <!-- 40. 該如何設置，讓第一個元素靠左邊，其餘元素靠右邊排列？-->
-    
+                是否可以設置為 flex-grow-2？===>無此class -->
+        <div class="d-flex p-2  bg-secondary text-white">
+            <div class="flex-grow-1 p-2 bg-info">Bootstrap 4 Flex1</div>
+            <div class="flex-grow-1 p-2 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="flex-grow-1 p-2 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        <hr>
+        <!-- 20. .flex-row 和 .flex-row-reverse 的差異 left 123 ===>  321 right -->
 
+          <div class="d-flex flex-row p-2 bg-secondary text-white">
+            <div class="flex-row p-2 bg-info">Bootstrap 4 Flex1</div>
+            <div class="flex-row p-2 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="flex-row p-2 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        <hr>
+        <!-- 30. 該如何設置，可以讓外層容器佔瀏覽器寬度的一半？ -->
+        <div class="d-flex w-50 bg-secondary text-white">
+            <div class="flex-row p-2 bg-info">Bootstrap 4 Flex1</div>
+            <div class="flex-row p-2 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="flex-row p-2 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        <br>
+        <hr>
+        <!-- 40. 該如何設置，讓第一個元素靠左邊，其餘元素靠右邊排列？-->
+        <div class="d-flex p-2 bg-secondary text-white">
+            <div class="flex-row p-2 bg-info  mr-auto">Bootstrap 4 Flex1</div>
+            <div class="bg-warning">Bootstrap 4 Flex2</div>
+            <div class="bg-info">Bootstrap 4 Flex3</div>
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>

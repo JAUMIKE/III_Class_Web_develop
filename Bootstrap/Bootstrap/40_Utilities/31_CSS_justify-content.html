@@ -10,14 +10,25 @@
 
             /* 10. 增加 justify-content: center; 設定，觀察畫面變化  */
             /*     小 陷 阱 */
+            display: flex;
+            /* justify-content: center; */
 
             /* 11. 測試設定值： flex-start 、 flex-end */
-
+           
+            /* justify-content: flex-end; */
+           
             /* 20. 測試設定值： space-around 、 space-between */
-
+           
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+           
             /* 30. 改變 .box 的高度，內容是否會跟著改變？ */
-
-            /* 31. 測試 align-items: stretch | flex-start | center | flex-end */
+            height: 500px;
+            /* 31. 測試 align-items: stretch | flex-start | center | flex-end  ，預設值為stretch*/
+            /* align-items: stretch; */
+            /* align-items: flex-end; */
+            align-items: center;
+            /* align-items: stretch; */
         }
 
         .box>div {

@@ -28,14 +28,49 @@
         <hr>
         
         <!-- 10. .justify-content-*，針對「外層容器」做設置 -->
+        <div class="d-flex p-2 justify-content-center bg-secondary text-white">
+            <div class="p-3 bg-info">Bootstrap 4 Flex1</div>
+            <div class="p-3 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="p-3 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        <hr>
         
-        <!-- 20. .align-items-*，針對「外層容器」設置 (內容單行時) -->
-    
+        <!-- 20. .align-items-*，針對「外層容器」設置 (內容單行時) 使用.align-items類別時，外部容器需要設定高度 -->
+        <!--  align-items-center  -->
+        <div class="d-flex p-2 bg-secondary text-white align-items-center" style="height: 400px;">
+            <div class="p-3 bg-info">Bootstrap 4 Flex1</div>
+        </div>
+        <hr>
         <!-- 21. .align-content-*，針對「外層容器」設置 (內容多行時) -->
+        <!-- <div class="d-flex align-items-end p-2 bg-secondary text-white" style="height: 400px;"> -->
+        <!-- <div class="d-flex align-items-start p-2 bg-secondary text-white" style="height: 400px;"> -->
+        <div class="d-flex align-items-baseline p-2 bg-secondary text-white" style="height: 400px;">
+            <!-- baseline當改變子層的字體大小才會生效 -->
+            <div style="font-size: 1rem;" class="p-3 bg-info">Bootstrap 4 Flex1</div>
+            <div style="font-size: 2rem;" class="p-3 bg-warning">Bootstrap 4 Flex2</div>
+            <div style="font-size: 4rem;" class="p-3 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        <hr>
        
         <!-- 22. .align-self-*，針對「元素本人」作設置  -->
-    
+        <div class="d-flex p-2 bg-secondary text-white" style="height: 400px;">
+            <div class="p-3 bg-info">Bootstrap 4 Flex1</div>
+            <div class="p-3 bg-warning align-self-center">Bootstrap 4 Flex2</div>
+            <div class="p-3 bg-info">Bootstrap 4 Flex3</div>
+        </div>
+        <hr>
+
+        <!-- 23 陷阱  如果指定孩子的高度，容器的 stretch 不會成功-->
+        <div class="d-flex p-2 bg-secondary text-white align-items-stretch" style="height: 400px;">
+            <div class="p-3 h-25 bg-info">Bootstrap 4 Flex1</div>
+            <div class="p-3 h-50 bg-warning">Bootstrap 4 Flex2</div>
+            <div class="p-3 h-75 bg-info">Bootstrap 4 Flex3</div>
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </body>
 

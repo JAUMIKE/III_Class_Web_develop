@@ -6,36 +6,46 @@
         .box>div {
             background-color: lightgreen;
             margin: 10px;
-            padding: 20px;
+            padding: 10px;
             font-size: 2em;
-            width: 100px;
+            width: 1000px;
         }
 
         .box {
             background-color: lightcoral;
             /* 20. 加入 display: flex;  */
+            display: flex;
            
             /* 21. 改變 flex 的方向 
                    flex-direction */
-           
+           /* flex-direction: column; */
             /* 22. 進行元素位置的重新排序 
                    flex-direction: row | column -reverse*/
-           
+           /* flex-direction: row-reverse; */
             /* 30. 請試著改變瀏覽器寬度，觀察元素有什麼變化？ */
            
            
             /* 31. 透過換行的設定，讓空間不夠的元素折行  
                    flex-wrap */
-
+                /* flex-wrap: wrap; */
 
             /* 40. 指定flex的方向還有設定換行可以進行縮寫 
                     flex-flow: row wrap; */
-
+            /* flex-flow: row wrap; */
         }
 
-        /* 50. 在子元素透過 flex-grow 進行畫面的分配 */
+             /* 50. 在子元素透過 flex-grow 進行畫面的分配 */
         /*     !!記得需要將瀏覽器拉寬，才看的到效果!! */
-       
+        .box>div:nth-of-type(1){
+            /* flex 沒單位的時候 = flex-grow */
+            /* flex:2; */
+            /*  flex-shrink 1,2同時使用時，會超出範圍*/
+            /* flex-shrink: 0; */
+        }
+        .box>div:nth-of-type(2){
+            /* flex:1; */
+            /* flex-shrink: 0; */
+        }
     </style>
 </head>
 
@@ -49,10 +59,10 @@
         <div>1</div>
         <div>2</div>
         <div>3</div>
-        <div>4</div>
+        <!-- <div>4</div>
         <div>5</div>
         <div>6</div>
-        <div>7</div>
+        <div>7</div> -->
     </div>
 
 </body>
