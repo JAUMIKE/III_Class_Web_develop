@@ -26,20 +26,29 @@
         <hr>
 
         <!-- 10. 加入一個 <div> 標籤，並添加類別 .collapse，id 設定為 demo  -->
-        
+        <p>這裡的collapse為摺疊</p>
+        <div class="bg-danger text-white collapse">Apple</div>
+        <hr>
             
         <!-- 20. 加入一個按鈕 -->
         <!--    a. 套用按鈕的相關樣式 -->
         <!--    b. 增加屬性 data-toggle="collapse"-->
         <!--    c. 增加屬性 data-target="#demo" -->
-        
+        <button class="btn btn-info" data-toggle="collapse" data-target="#apple">顯示</button>
+        <div id="apple" class="bg-danger text-white collapse">這是隱藏訊息唷</div>
+        <hr>
+
         <!-- 25. 加入一個超連結 -->
         <!--    a. 套用按鈕的相關樣式 -->
         <!--    b. 超連結的 href 指向 demo2 -->
         <!--    c. 增加屬性 data-toggle="collapse" -->
-        
-
+        <a class="btn btn-info" href="#demo2" data-toggle="collapse">顯示</a>
+        <div id="demo2" class="collapse">放內容的地方</div>
         <!-- 30. 若內容想要預設為顯示，需要加入類別 .show  -->
+        <hr>
+         
+        <a class="btn btn-info" href="#demo3" data-toggle="collapse">顯示</a>
+        <div id="demo3" class="collapse show">放內容的地方</div>
     </div>
 
 </body>

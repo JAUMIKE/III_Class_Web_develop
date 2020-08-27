@@ -15,14 +15,34 @@
 
     <div class="container">
 
-        <h4>延續上一個檔案</h4>
+            <h4>延續上一個檔案</h4>
 
-        <!-- 10. 如果想要讓文字覆蓋到圖片上面，該怎麼做? -->
+            <div class="card">
+                    <img class="img-fluid rounded" src="../_image/sunny.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h2>千陽號</h2>
+                    </div>
+            </div><hr><br>
+            <!-- 10. 如果想要讓文字覆蓋到圖片上面，該怎麼做? -->
         <!--     a. 取消 .card-header 和 .card-footer-->
         <!--     b. .card-body 置換成 .card-img-overlay -->
 
 
         <!-- 20. 試著改變文字在圖片上的位置：如何將文字水平垂直置中? -->
+        <p>方法一 align-self-center、mx-auto</p>
+        <div class="card text-center">
+            <img class="img-fluid rounded " src="../_image/sunny.jpg" alt="">
+            <div class="card-img-overlay d-flex">
+                <h2 class="my-auto mx-auto display-4 badge-dark">千陽號</h2>
+            </div>
+        </div><hr><br>
+        <p>方法二 my-auto、mx-auto</p>
+        <div class="card text-center">
+            <img class="img-fluid rounded " src="../_image/sunny.jpg" alt="">
+            <div class="card-img-overlay d-flex">
+                <h2 class="my-auto mx-auto display-4 badge-dark">千陽號</h2>
+            </div>
+        </div><hr><br>
 
     </div>
 

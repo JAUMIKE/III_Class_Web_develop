@@ -9,7 +9,14 @@
     <script src="../_js/jquery.min.js"></script>
     <script src="../_js/popper.min.js"></script>
     <script src="../_js/bootstrap.min.js"></script>
-
+    <style>
+        .carousel-inner img{
+            width:100%;
+            height: 300px;
+            /* object-fit 要有寬高 */
+            object-fit: contain;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,7 +25,27 @@
     <div class="container">
 
         <!-- 10. 將第二張圖片改為顯示 ../_image/sunny.jpg，查看畫面效果 -->
-
+        <p>加入指標提示使用者目前有多少項目 </p>
+        <div class="carousel slide" data-ride="carousel" id="carouselExampleControls01" data-interval="300"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://dummyimage.com/600x300/00ff5e/ffffff"  alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../_image/sunny.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dummyimage.com/600x300/f057c5/ffffff" alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </div><hr>
+        <br>
+        <br>
+        <br>
         <!-- 20. 設定圖片大小 -->
 
     </div>

@@ -28,13 +28,50 @@
         <!--    .toast -->
         <!--    .toast-header -->
         <!--    .toast-body -->
+        <div class="toast">
+            <div class="toast-header">頭</div>
+            <div class="toast-body">身體</div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
         
         <!-- 20. 在外層的吐司盒子加上 data-autohide="false"，就不會自動消失 -->
-       
+        <div class="toast" data-autohide="false">
+            <div class="toast-header">頭-2</div>
+            <div class="toast-body">身體-2</div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        
         <!-- 30. 針對 toast header 和 toast body 進行美化  -->
-       
+        <div class="toast bg-warning" data-autohide="false">
+            <div class="toast-header">
+                <b class="mr-auto">你收到一則邀請</b><small>幾秒鐘前</small>
+            </div>
+            <div class="toast-body">身體-3</div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        
         <!-- 40. 加入按鈕關閉 toast -->
-       
+        <div class="toast bg-warning" data-autohide="false">
+            <div class="toast-header">
+                <b class="mr-auto">你收到一則邀請</b><small>幾秒鐘前</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">身體-3</div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        
     </div>
 
     <script>

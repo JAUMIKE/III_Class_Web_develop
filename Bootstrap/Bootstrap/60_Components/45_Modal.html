@@ -27,26 +27,51 @@
 
         <hr>
         <!-- 10. Modal 類別結構 -->
-        <!--    .modal + .fade .show .d-block-->
-        <!--    .modal-dialog：對話框的內容-->
-        <!--    .modal-content：對話框內容 -->
-        <!--        .modal-header -->
-        <!--        .modal-title -->
-        <!--    .modal-body -->
-        <!--    .modal-footer -->
-
-
+        <!--    .modal -->
+        <!--        .modal-dialog ：對話框-->
+        <!--            .modal-content：對話框內容 -->
+        <!--               .modal-header -->
+        <!--                     .modal-title -->
+        <!--               .modal-body -->
+        <!--               .modal-footer -->
+        <div data-backdrop="static" id="demo" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">註冊</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for="">姓名：</label>
+                            <input type="text" name="" id=""> <br>
+                            <label for="">姓名：</label>
+                            <input type="text" name="" id=""> <br>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">註冊</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- 20. 加入一顆按鈕，透過按鈕打開對話框 -->
         <!--     a. data-toggle="modal" -->
         <!--     b. data-target="#元素名稱" -->
-
+        <button data-toggle="modal" 
+                data-target="#demo"
+                class="btn btn-primary">
+            我要註冊
+        </button>
 
         <!-- 30. 設定無法透過點擊背景就關閉 Model  -->
-        <!--     data-backdrop="static" |  data-backdrop="false" -->
-        
-
+        <!--     data-backdrop="static" |  
+                 data-backdrop="false" -->
     </div>
-    
+
 </body>
 
 </html>

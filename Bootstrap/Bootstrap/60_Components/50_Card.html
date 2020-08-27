@@ -9,6 +9,13 @@
     <script src="../_js/jquery.min.js"></script>
     <script src="../_js/popper.min.js"></script>
     <script src="../_js/bootstrap.min.js"></script>
+    <style>
+        /* img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        } */
+    </style>
 </head>
 
 <body>
@@ -29,17 +36,100 @@
     <!--       .card-header -->
     <!--       .card-body > .card-title -->
     <!--       .card-footer -->
-
-
+    <div class="card">
+        <div class="card-header">頭</div>
+        <div class="card-body">身體</div>
+        <div class="card-footer">尾巴</div>
+    </div><hr>
+    <br>
+    <br>
+    <br>
     <!-- 11. 在卡片中放入一張圖片 -->
 
+    <div class="card">
+        <div class="card-header">頭</div>
+        <div class="card-body">
+            <img class="img-fluid rounded" src="../_image/sunny.jpg" alt="">
+            <h2>千陽號</h2>
+            <p>        看看別人，再想想自己，會發現問題的核心其實就在你身旁。阿拉伯說過一句經典的名言，經歷重大變故的人，容易成為智者。這段話非常有意思。奧斯特洛夫斯基相信，你必須保持誠實的立場。這時常是冒險的，這需要有勇氣。這段話的餘韻不斷在我腦海中迴盪著。荀子講過一句值得人反覆尋思的話，伯樂不可欺馬，君子不可以欺人。這句話令我不禁感慨問題的迫切性。我們需要淘汰舊有的觀念，千陽號可以說是有著成為常識的趨勢。</p>
+            
+        </div>
+        <div class="card-footer">尾巴</div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <!-- 12. 試著加入超連結，並且設定位置出現在最右邊  -->
+    <p>試著加入超連結，並且設定位置出現在最右邊 方法一、float:right</p>
+    <div class="card w-25 float-left">
+        <div class="card-header">頭</div>
+        <div class="card-body">
+            <img class="img-fluid rounded" src="../_image/sunny.jpg" alt="">
+            <h2>千陽號</h2>
+            <p>        看看別人，再想想自己，會發現問題的核心其實就在你身旁。阿拉伯說過一句經典的名言，經歷重大變故的人，容易成為智者。這段話非常有意思。奧斯特洛夫斯基相信，你必須保持誠實的立場。這時常是冒險的，這需要有勇氣。這段話的餘韻不斷在我腦海中迴盪著。荀子講過一句值得人反覆尋思的話，伯樂不可欺馬，君子不可以欺人。這句話令我不禁感慨問題的迫切性。我們需要淘汰舊有的觀念，千陽號可以說是有著成為常識的趨勢。</p>
+            <a class="float-right" href="">More +</a>
+        </div>
+        <div class="card-footer clearfix">尾巴</div>
+    </div>
+    <div class="card w-25 float-left">
+        <div class="card-header">頭</div>
+        <div class="card-body">
+            <img class="img-fluid rounded" src="../_image/sunny.jpg" alt="">
+            <h2>千陽號</h2>
+            <p>        看看別人，再想想自己，會發現問題的核心其實就在你身旁。阿拉伯說過一句經典的名言，經歷重大變故的人，容易成為智者。這段話非常有意思。奧斯特洛夫斯基相信，你必須保持誠實的立場。這時常是冒險的，這需要有勇氣。這段話的餘韻不斷在我腦海中迴盪著。荀子講過一句值得人反覆尋思的話，伯樂不可欺馬，君子不可以欺人。這句話令我不禁感慨問題的迫切性。我們需要淘汰舊有的觀念，千陽號可以說是有著成為常識的趨勢。</p>
+            <a class="float-right" href="">More +</a>
+        </div>
+        <div class="card-footer clearfix">尾巴</div>
+    </div>
 
-    <!-- 12. 試著加入超連結，並且設定位置出現在最右邊 -->
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+
+     <!--分隔線 --> 
+     <div class="clearfix">
+        <p class="clearfix">試著加入超連結，並且設定位置出現在最右邊 方法二、div>text-right</p>
+        <div class="card clearfix">
+            <div class="card-header">頭</div>
+            <div class="card-body">
+                <img class="img-fluid rounded" src="../_image/sunny.jpg" alt="">
+                <h2>千陽號</h2>
+                <p>        看看別人，再想想自己，會發現問題的核心其實就在你身旁。阿拉伯說過一句經典的名言，經歷重大變故的人，容易成為智者。這段話非常有意思。奧斯特洛夫斯基相信，你必須保持誠實的立場。這時常是冒險的，這需要有勇氣。這段話的餘韻不斷在我腦海中迴盪著。荀子講過一句值得人反覆尋思的話，伯樂不可欺馬，君子不可以欺人。這句話令我不禁感慨問題的迫切性。我們需要淘汰舊有的觀念，千陽號可以說是有著成為常識的趨勢。</p>
+                <div class="text-right">
+                    <a class="float-right" href="">More +</a>
+                </div>    
+            </div>
+            <div class="card-footer clearfix">尾巴</div>
+        </div>
+    </div>   
+    <hr>
+    <br>
+    <br>
+    <br>
 
     <!-- 13. 試著在超連結加入 .stretched-link 類別 -->
     <!--     觀察超連結涵蓋的範圍 -->
-
+    <p>試著加入超連結，並且設定位置出現在最右邊 方法一、float:right</p>
+    <div class="card">
+        <div class="card-header">頭</div>
+        <div class="card-body">
+            <img class="img-fluid rounded" src="../_image/sunny.jpg" alt="">
+            <h2>千陽號</h2>
+            <p>        看看別人，再想想自己，會發現問題的核心其實就在你身旁。阿拉伯說過一句經典的名言，經歷重大變故的人，容易成為智者。這段話非常有意思。奧斯特洛夫斯基相信，你必須保持誠實的立場。這時常是冒險的，這需要有勇氣。這段話的餘韻不斷在我腦海中迴盪著。荀子講過一句值得人反覆尋思的話，伯樂不可欺馬，君子不可以欺人。這句話令我不禁感慨問題的迫切性。我們需要淘汰舊有的觀念，千陽號可以說是有著成為常識的趨勢。</p>
+            <a class="float-right stretched-link" href="">More +</a>
+        </div>
+        <div class="card-footer clearfix">尾巴</div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
     <hr>
 </body>
 

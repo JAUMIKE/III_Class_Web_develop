@@ -54,33 +54,48 @@
             <!--    d. 在 <input type="checkbox"> 加入 .form-check-input  -->
             <!--    e. 在 包含 checkbox 的 <div> 加入   .form-group .form-check -->
 
-            <div>
+            <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="text-muted">We'll never share your email with anyone
+                <input class="form-control" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="text-muted form-text">We'll never share your email with anyone
                     else.</small>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" id="exampleInputPassword1" placeholder="Password">
+                <input class="form-control" type="password" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div>
-                <input type="checkbox" id="exampleCheck1">
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="form-group  form-check">
+                <input class="form-check-input" type="checkbox" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Check me out</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
 
 
             <!-- 20. <input type="text">  加入 .form-control-plaintext 取消邊框設定-->
             <div class="form-group">
-                <input type="text" placeholder="邊框預設一直都在" name="text1">
+                <input type="text" class="form-control-plaintext" placeholder="邊框預設一直都在" name="text1">
             </div>
             
             <!-- 30. 透過 .input-group 改變元素顯示方式 -->
             <!--     .input-group         -->
             <!--     .input-group-prepend |  .input-group-append -->
             <!--     .input-group-text    -->
-
+            <div class="input-group">
+               
+                <input id="text" name="text" type="text" class="form-control">
+                <!-- .input-group-prepend的位置顯示與標籤位置放在<input>前後有關-->
+                <div class="input-group-prepend">
+                    <label class="input-group-text">地址
+                    </label>
+                  </div> 
+              </div>
+              <br>
+              <br>
+              <br>
 
             <!-- 40. 底下範例來自官網，試試看移除掉 .custom-control-input  -->
             <div class="custom-control custom-checkbox">
