@@ -8,23 +8,29 @@
              請觀察取消註解後
              <p> 標籤的內容是否會被改變？ -->
 
-    <!-- 
-    <script>
+    <!-- 下面會出錯，因為JS是逐行執行，所以這邊demo物件尚未產生 -->
+    <!-- <script>
         document.getElementById('demo').innerText = "head";
-    </script> 
-    -->
+    </script>  -->
+   
 
 </head>
 
 <body>
 
+   <!-- innerText 是元素(有起訖標籤)的屬性， -->
+    <!-- <script>
+        document.getElementById('demo').innerText = "body"; //body在此行執行會出錯
+    </script>  -->
     <p id="demo"> 測試文字 </p>
 
-    <!-- 
+    
     <script>
         document.getElementById('demo').innerText = "body";
+        console.log(document.getElementById('demo').innerText = "body")
     </script> 
-    -->
+
+   
 
 </body>
 

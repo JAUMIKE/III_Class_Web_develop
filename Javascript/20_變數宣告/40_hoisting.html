@@ -21,29 +21,42 @@
     <script>
 
         // 10. 執行前思考：底下這一行應該會出現什麼訊息?
-        try {
-            console.log(x);
-        } catch (error) {
-            console.log(error);
-        }
+        // try {
+        //     console.log(x); //選項A
+        // } catch (error) {
+        //     console.log(error); 
+        // }
 
         // 20. 執行前思考：底下這一行應該會出現什麼訊息?
-        var x2;
-        console.log(x2); 
-        x2 = 10;
+        // var x2;
+        // console.log(x2);  //選項C
+        // x2 = 10;
 
         // 30. 執行前思考：底下這一行應該會出現什麼訊息?
-        x3 = 20;
-        console.log(x3);
-        var x3;
+        // x3 = 20;
+        // console.log(x3); //選項D
+        // var x3; 
 
         // 40. 執行前思考：底下這一行應該會出現什麼訊息?
-        console.log(x4); 
-        var x4 = 25;
+        // console.log(x4);  //因為hoisting關係，會讓宣告放最上面，變成 var x4; 因此會印出undefine 
+        // var x4 = 25;
 
 
         // 50. 用 上述用 var 宣告的變數改為用 let 宣告，會出現什麼訊息?
- 
+        console.clear()
+        // 方法20
+        let x2;
+        console.log(x2);   //選項C
+        x2 = 10;    
+
+        // 方法30
+        // x3 = 20;
+        // console.log(x3); //選項B
+        // let x3; 
+
+        // 方法40
+        console.log(x4);   //選項B  
+        let x4 = 25;
     </script>
 </body>
 

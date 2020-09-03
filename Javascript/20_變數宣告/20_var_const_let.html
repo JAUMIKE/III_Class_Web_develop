@@ -16,15 +16,51 @@
     <h3>JavaScript Const：<a href="https://www.w3schools.com/js/js_const.asp">https://www.w3schools.com/js/js_const.asp</a></h3>
     <script>
         // 10. var、let、const 宣告變數的方法
-    
-        // 20. const 變數宣告並給值後是否還能修改?
+        // var apple = 1;
+        // let bee=2;
+        // const cat = 3;
+        // console.log('apple is ' + apple);
+        // console.log( 'bee is ' + bee);
+        // console.log('cat is ' + cat);
+        // 20. const 變數宣告並給值後是否還能修改?  
+        // cat = 999;
+        // console.log(cat);
 
         // 30. 在 if 判斷句中，透過 var、let 宣告兩個變數，並觀察他們的作用域
-                   
-        // 40. 測試 var 宣告相同的變數名稱
-
+        // if(true){
+        //     var textA = 'apple';
+        //     let textB = 'bee';        
+        //     console.log('ok');
+        // }
+        // console.log(textA);
+        // console.log(textB);
+            
+        // function a() { 
+        //     var x=5;
+        //     console.log(x);
+        //  }
+        //  console.log(x); //會錯誤
+        //  a()
+            
+        // 40. 測試 var 宣告相同的變數名稱 
+         var x = 5;
+         console.log(x);
+         var x = 'apple';   
+         console.log(x); //成功顯示
         // 50. 測試 let 宣告相同的變數名稱 
-        
+        console.clear();
+        let y = 100;
+        console.log(y);
+        let y = 'bee'; 
+        console.log(y); //顯示錯誤
+           
+
+
+        // if(1 == '1' ){
+        //     console.log('OK');
+        // }else{
+        //     console.log('no')
+        // }   
     </script>
 </body>
 

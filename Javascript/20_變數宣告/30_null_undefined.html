@@ -8,13 +8,28 @@
 <body>
     <script>
         // 10. undefined 是一個關鍵字
+        var a; //未給值，系統預設會給undefined
+        console.log(a);
+        a = 1;
+        console.log(a);
 
+        
 
         // 20. not defined 是一項錯誤訊息描述 (XXX is not defined)
-
+        // console.log(b); 
 
         // 30. undefined 和 null 的比較
+        console.clear();
+        console.log(1==1);
+        console.log('apple' == 'apple');
+        
+        console.log(undefined == null); //會得到true
+        console.log(undefined === null); //會得到false
 
+        var a = 1;
+        console.log(typeof(a));
+        console.log(typeof(undefined)); //undefined型態
+        console.log(typeof(null)); //object型態
     </script>
 </body>
 

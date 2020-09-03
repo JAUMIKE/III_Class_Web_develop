@@ -3,11 +3,15 @@
 <head>
   
     <!-- 10. 測試透過 script src 加入 *.js 檔案 -->
-
+    <script src="index.js"></script>
     <!-- 20. 測試在 script 標籤加入 defer 屬性的差異 -->
+    <script defer src="index2.js"></script>
+    <script>console.log('Class');</script>
 
 </head>
 <body>
-    
+    <script>
+        console.log('Kite');
+    </script>
 </body>
 </html>

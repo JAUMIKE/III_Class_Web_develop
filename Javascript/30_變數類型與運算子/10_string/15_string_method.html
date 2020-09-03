@@ -13,13 +13,21 @@
         var str = "Practice makes perfect";
 
         // 0. 字串的長度
-
+        var a = 'apple';
+        console.log(a.length);
         // 1. 字串.match() 在字串中找到符合條件
+        var result = str.match('p')
+        console.log(result);
+
+        var result_A = str.match('z')
+        console.log(result_A); //回傳null
+
 
         // 2. 字串.indexOf() 回傳了什麼?
-
+        console.log(str.indexOf('makes'));
+        console.log(str.indexOf('z')); //回傳-1
         // 3. 找到字串中最後一次出現的 e 的函式是什麼?
-
+        
 
         // 4. 擷取底下字串
         // 0911222333 是 手機
@@ -33,7 +41,9 @@
 
         // 6. 字串往左補零
         var demo = "13756"
-
+        var result = demo.padStart(10,'a');
+        console.log(result);
+        var result2 = demo.padStart(10,0);
 
         // // 7. 比較 substr()、substring()、slice()
         // console.group("(0, 2)");

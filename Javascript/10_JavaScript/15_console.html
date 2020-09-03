@@ -13,32 +13,46 @@
         // 練習和觀察底下指令在 console 有怎麼樣的呈現
 
         // 10. console.log()
-
-
+        console.log('Apple');
+        console.log(123);
+        console.log("Cat");
+        console.log([1,3,'aaa']);
         // 20. console.error()、console.warn()
-
-
+        console.error('aaaa');
+        console.error(123);
+        document.write('<hr>');
+        console.warn(123);
+        console.warn('apple');
         // 30. console.clear()
-
+        // console.clear()
 
         // 40. 底下程式碼請直接取消註解查看效果
+        // table是一個方法
         //   console.table(["apple", "bee", "cat"]);
 
 
         // 45. 底下程式碼請直接取消註解查看效果
-        // console.time();
-        // for (var i = 0; i < 100000; i++) {
-        //     let square = i ** 2;
-        // }
-        // console.timeEnd();
+        console.time();
+        for (var i = 0; i < 100000; i++) {
+            let square = i ** 2;
+        }
+        console.timeEnd();
 
 
         // 50. console.group()、console.groupEnd()
-
+        console.group('50. group()不會折疊');
+        console.log('apple');
+        console.log('bee');
+        console.log('cat');
+        console.groupEnd();
 
         // 55. console.groupCollapsed()、console.groupEnd()
-
-
+        console.groupCollapsed('55.console.groupCollapsed() 會摺疊')
+        console.log('apple');
+        console.log('bee');
+        console.log('cat');
+        console.groupEnd();
+   
 
     </script>
 
