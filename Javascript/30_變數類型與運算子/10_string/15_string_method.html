@@ -33,10 +33,22 @@
         // 0911222333 是 手機
         // 0423456789 是 電話號碼
         var phones = "09112223330423456789";
+        console.log('celephone is '+phones.substr(0,10))
+        console.log(`telephone is ${phones.substr(10)}`)
 
 
+        console.log('celephone is '+phones.substring(0,10))
+        console.log(`telephone is ${phones.substring(10)}`)
+
+        console.log('celephone is '+phones.slice(0,10))
+        console.log(`telephone is ${phones.slice(10)}`)
+
+
+        
         // 5. 字串.split() 把字串分割為陣列
+        console.clear();
         var fruits = "apple, bubble, lemon";
+        console.log(fruits.split(','));
 
 
         // 6. 字串往左補零
@@ -46,19 +58,23 @@
         var result2 = demo.padStart(10,0);
 
         // // 7. 比較 substr()、substring()、slice()
-        // console.group("(0, 2)");
-        // var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        // console.log(`str.substr(0,2)：${str.substr(0, 2)}`);
-        // console.log(`str.substring(0,2)：${str.substring(0, 2)}`);
-        // console.log(`str.slice(0,2)：${str.slice(0, 2)}`);
-        // console.groupEnd();
+        console.group("(0, 2)");
+        var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        console.log(`str.substr(0,2)：${str.substr(0, 2)}`);
+        console.log(`str.substring(0,2)：${str.substring(0, 2)}`);
+        console.log(`str.slice(0,2)：${str.slice(0, 2)}`);
+        console.groupEnd();
 
 
-        // console.group("(3, 5)");
-        // console.log(`str.substr(3,5)：${str.substr(3, 5)}`);
-        // console.log(`str.substring(3,5)：${str.substring(3, 5)}`);
-        // console.log(`str.slice(3,5)： ${str.slice(3, 5)}`);
-        // console.groupEnd();
+        console.group("(3, 5)");
+        console.log(`str.substr(3,5)：${str.substr(3, 5)}`);
+        console.log(`str.substring(3,5)：${str.substring(3, 5)}`);
+        console.log(`str.slice(3,5)： ${str.slice(3, 5)}`);
+        console.groupEnd();
+
+        var DateStr = '2020-09-04'
+        var result = DateStr.split('-');
+        console.log(`取得的月份是 ${result[1]} 月`);
 
         // console.group("(5, 3)");
         // console.log(`str.substr(5,3)：${str.substr(5, 3)}`);

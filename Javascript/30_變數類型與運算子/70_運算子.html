@@ -21,12 +21,19 @@
         var b = 3;
 
         // 10. 取餘數 %
-
+        console.log(a%b);
         // 11. ++變數  和  變數++ 
-
+        var temp = 1;
+        console.log(++temp); //先運算再傳值
+        var temp = 1;
+        console.log(temp++); //先遇到Temp，所以先傳值，才運算
         // 12. "字串" 的四則運算
-
-
+        var apple = '20';
+        var bee = '10';
+        console.log(apple+bee);
+        console.log(apple-bee);
+        console.log(apple*bee);
+        console.log(apple/bee);
 
         // 比較運算子：評估條件，回傳 true 或者 false 值
         var x = 10;
@@ -34,25 +41,49 @@
         var z = 5;
 
         // 20. == 和 === 的差異在?
-
+      
+        console.log(x==y);
+        console.log(x===y);
+        console.log('-----')
         // 21. 測試 2 > 1
+        console.log(2>1)
+
 
         // 22. 測試 1 < 2 < 3 和 3 > 2 > 1
-
+        console.log(1 < 2 < 3) //true 1<2 true ; 1<3 true
+        console.log(3 > 2 > 1) //false 3>2 true(true=1) 1>1 false  
         // 23. 測試 true == 1 還有 false == 0 
-
+        console.log(true == 1 );
+        console.log(false == 0 );
         
 
         // 邏輯運算子
         // 30. 不等於的寫法 (!=)
+        
+        console.log(a!=b);
+        console.log(x!=y);
 
         // 40. and (&&) 條件需要同時成立的時候
-
+        console.log(a>b && x>z);
         // 50. or (||) 條件擇一成立
-
+        console.log(a==b || x>z);
         // 60. && 和 & 的差異
-
-
+        console.clear();
+        var apple = 10;
+        var bee = 20;
+        // 會得到 B,apple=11 bee = 20，因為前面是false，所以後面不會運算('&&'情況下)
+        if (apple++ > 10 && bee-- < 10) {
+            console.log(`A. ${apple}, ${bee}`); 
+        } else {
+            console.log(`B. ${apple}, ${bee}`);
+        }
+        console.log('--------')
+        // 會得到 B,apple = 11 bee = 19 ('&'情況下)
+        if (apple++ > 10 & bee-- < 10) {
+            console.log(`A. ${apple}, ${bee}`);
+        } else {
+            console.log(`B. ${apple}, ${bee}`);
+        }
 
         // 位元運算子
         // https://www.w3schools.com/js/js_bitwise.asp
@@ -61,9 +92,18 @@
 
 
         // 70. 三元運算子 (condition) ? value1:value2
-
-
-
+        var score = 59;
+        var result = '';
+        //原本方法
+        // if(score > 60){
+        //     result = '及格';
+        // }else{
+        //     result = '不及格';
+        // }
+        // console.log(result);
+        // 三元運算子
+        var result = (score > 60)? '及格' : '不及格';
+        console.log(result);
     </script>
 
 </body>

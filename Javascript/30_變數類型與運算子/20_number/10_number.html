@@ -19,17 +19,26 @@
         
         // 底下數值運算後，請透過console.log察看結果
         // 10. 宣告一個變數 result = 1 + 2
-
-        
+        var result = 1+2;
+        console.log(result);
         // 20. 設定 result = 0.2 + 0.1
-
+        var result = 0.2+0.1;
+        console.log(result);
 
         // 30. 處理方法：https://www.w3schools.com/js/js_numbers.asp
-
-
+        var result = (0.2*10+0.1*10)/10
+        console.log(result)
         // 40. JavaScript 能處理的最大範圍 -2^53到2^53之間（不含兩個端點）
-        
-        
+        var temp = Number.MAX_SAFE_INTEGER;
+        console.log(temp);
+        console.log(temp+1); //往上加開始有異常
+        console.log(temp+2); //往上加開始有異常
+        console.log(temp+3); //往上加開始有異常
+        console.log('----')
+        console.log(Number.isSafeInteger(temp)); //true
+        console.log(Number.isSafeInteger(temp+1)); //false
+        console.log(Number.isSafeInteger(temp+2)); //false
+        console.log(Number.isSafeInteger(temp+3)); //false
     </script>
 
 </body>

@@ -13,14 +13,38 @@
  
         // 10. toPrecision() and toFixed()
         // 請測試數值 1.005 和 1.006
+        // 10. toPrecision() and toFixed()
+        // 請測試數值 1.005 和 1.006
+        console.group('10. var x = 1.005;');
+        var x = 1.005;
+        console.log(`${x}.toFixed(2):     ${x.toFixed(2)}`);
+        console.log(`${x}.toPrecision(3): ${x.toPrecision(3)}`);
+        console.log(`${x}.toPrecision(21): ${x.toPrecision(21)}`);
+        console.groupEnd();
 
-
+        console.group('10. var y = 1.006;');
+        var y = 1.006;
+        console.log(`${y}.toFixed(2):     ${y.toFixed(2)}`);
+        console.log(`${y}.toPrecision(3): ${y.toPrecision(3)}`);
+        console.log(`${y}.toPrecision(21): ${y.toPrecision(21)}`);
+        console.groupEnd();
         // 20. 數值運算常見的錯誤
         // NaN、Infinity、-Infinity
-
+        console.clear()
+        var temp = 10/2;
+        var tempA = 10/'a';
+        var tempB = 10/0;
+        console.log(temp);
+        console.log(typeof temp);
+        console.log(tempA);
+        console.log(tempB);
         
         // 30. 數值轉字串的方法 toString()
-
+        console.log('---------')
+        var temp = 5;
+        temp = temp.toString();
+        console.log(temp);
+        console.log(typeof temp)
     </script>
 
 </body>

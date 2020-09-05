@@ -12,12 +12,28 @@
     <script>
         // 10. 使用{} create object；object 可以包含屬性和方法
         //     { key1:value1, key2:value2.. }
-
+        // var obj = {};        //我要一個物件          
+        var obj = {
+            itemName :'桂格養氣人參',
+            itemPrice : 623,
+            itemQty : 4,
+            itemTot : 2492 
+        }; 
         // 20. 取得 object 屬性的值或者呼叫方法
-
+        console.log(obj);
+        // 方法一
+        console.log('取物件名稱屬性方法一 : ' + obj.itemName);
+        // 方法二
+        console.log('取物件名稱屬性方法二 : ' +obj['itemName']);
         // 30. 透過 . 新增 object 的屬性
+        obj.itemDiscount = 100;
+        console.log(obj);
 
+        // 修改屬性
+        obj.itemName = '奶粉'
+        console.log(obj);
         // 40. 透過 [] 新增 object 的屬性
+        console.log(obj['apple']) //得到undefined
     </script>
 
 </body>

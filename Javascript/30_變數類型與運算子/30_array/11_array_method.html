@@ -14,25 +14,39 @@
         var weekList = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
         // 10. 陣列的取值和長度
-
+        console.log(weekList[5]);
+        console.log(weekList.length);
         
-
         // 12. 陣列.toString()
-
-        // 13. 陣列.join("#")
+        console.log(weekList.toString());
         
-        // 14. 移除第一個元素
+        // 13. 陣列.join("#")
+        console.log(weekList.join(' '));
+        console.log(weekList.join('#'));
 
-        // 15. 移除最後一個元素
+        // 14. 移除第一個元素 shift()、 splice()
 
-        // 16. 有哪三種方法可以加入元素?
-
-
-
+        var result = weekList.shift();
+        // var result = weekList.splice(0,1);
+        console.log(weekList);
+        // 15. 移除最後一個元素 pop()
+        var resultA = weekList.pop();
+        console.log(weekList);   
+        // 16. 有哪三種方法可以加入元素? push、unshift、
+        // 第一種方法
+        weekList.unshift('sunday');
+        console.log(weekList);
+        // 第二種方法
+        weekList.push('saturday');
+        console.log(weekList);    
+        // 第三種方法
+        weekList[weekList.length]  = 'apple'
+        console.log(weekList);
         // 20. 二維陣列的長度
         var poker = [];
         poker[0] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-
+        console.log(poker.length);
+        console.log(poker[0].length);
 
     </script>
 </body>
