@@ -7,14 +7,29 @@
 
 <body>
 
-    <button>接收輸入，並顯示結果</button>
+    <button onclick="showMsg()">接收輸入，並顯示結果</button>
+    <hr>
+    <button onclick="showMsgA()">接收輸入，並顯示結果</button>
 
     <script>
         
         // 10. 透過 prompt接收使用者輸入，並記錄下來
-
+        function showMsg(){
+            let x = parseInt(prompt('請輸入x'));
+            let y = parseInt(prompt('請輸入y'))
+            // document.write(x+y); 顯示在頁面上
+            alert(x+y); //跳出alert
+            
+        }
         // 20. 將記錄到的資訊 alert 出來
 
+        function showMsgA(){
+            // let x = prompt('請輸入x');
+            // let y = prompt('請輸入y');
+            // document.write(x+y); 顯示在頁面上
+            eval(prompt('請輸入x')+prompt('請輸入y')); //跳出alert
+            
+        }
     </script>
 
 </body>

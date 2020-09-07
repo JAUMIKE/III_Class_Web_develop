@@ -18,14 +18,22 @@
         }
 
         // 10. 放入  add
-        
+        add(); // cnt ==> 1
+        add(); // cnt ==> 2
         // 20. 放入 'add()'
         
         // 30. 放入  add()
         
         // 40. 呼叫 setInterval 時改為直接放入 function 
-        
+        // setInterval(add(),1000); //放入add function 執行後的結果
+        // setInterval(add,1000); // 放入 add function
 
+
+        // setInterval(add(),1000) 要改寫成如下:
+        // setInterval(function() {
+        //     cnt += 1;
+        //     console.log(` add() ==>  ${cnt} `);
+        // },1000) 
     </script>
 </body>
 

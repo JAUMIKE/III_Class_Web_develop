@@ -50,12 +50,24 @@
         console.clear();
         // 小練習：如何透過日期的加減，取得這個月的最後一天?    
         // setDate(0) ==> 前一個月的最後一天      setDate(-1)) ==> 前一個月的倒數第二天 
+        // A方法
         var d = new Date();
-        console.log(d);
         d.setMonth(d.getMonth()+1);
         d.setDate(0);
         console.log(d);
 
+        // B方法
+        var h = new Date();
+        var lastDay = new Date(h.getFullYear(),h.getMonth()+1,0)
+        console.log(lastDay);
+
+        // C方法
+        a = new Date();
+        a.setDate(1);
+        a.setMonth(a.getMonth()+1); // 下個月1號
+        console.log(a);
+        a.setDate(a.getDate()-1);
+        console.log(a);
         // 小練習：宣告兩個日期物件，並指定日期後，進行日期相減
         // millisecond = 86400000 = 1000*60*60*24
         

@@ -6,15 +6,59 @@
 </head>
 
 <body>
-    <p id="memo">點選圖片後，放大圖片和文字</p>
-    <img id="imgTest" onclick="changeImage()" src="../../_image/notification.png" ;>
-
+    <p id="memo" onclick="">點選圖片後，放大圖片和文字</p>
+    <img id="imgTest" onclick="" src="../../_image/notification.png" ;>
+    <button onclick="changeImage()">放大</button>
     <script>
         // 1. 網頁的 圖片的 樣式的 寬度 改變
-
+        // function changeImage() { 
+        //     document.getElementById('imgTest').style.width= '300px';
+        //     document.getElementById('imgTest').style.height= '300px';
+        //     document.getElementById('imgTest').style.fontFamily='Impact,Charcoal,sans-serif';
+        //     // document.getElementById('memo').style.fontSize='80px';//方法一
+        //     document.getElementById('memo').style['font-size'] = '80px';//方法二
+        //  }
+   
         // 2. 網頁的 圖片的 樣式的 高度 改變
-
+        // 用按鈕逐漸放大文字
+        var size;
+        function changeImage() {
+            elm = document.getElementById('memo')
+            // 取得當前字大小
+            size = window.getComputedStyle(elm).getPropertyValue('font-size');
+            console.log(size);
+            // 將取得當前的字+2 (轉成數值)
+            var increaseSize = parseInt(size) + 2;
+            elm.style.fontSize=increaseSize + 'px';
+            // document.getElementById('memo').style.fontSize="50px";
+        }
+        
         // 3. 網頁的 memo的 樣式的 字型 改變
+        // 老師版本
+        function zoomin() {
+            // document.getElementById('memo').style.fontSize = "32px";
+
+            // 目前的 fontSize + "2px"
+
+            // // error: 找不到
+            // var nowFontSize = document.getElementById('memo').style.fontSize;
+            // -----------
+            // ok
+            var before = window.getComputedStyle(document.getElementById('memo')).getPropertyValue('font-size');
+
+            // // error: "16px" + 2 = "16px2"
+            // var after = before + 2; 
+            // -----------
+            // ok
+            var after = parseInt(before) + 2;
+
+            // // error: 沒有單位
+            // document.getElementById('memo').style.fontSize = after;
+            // -----------
+            // ok
+            document.getElementById('memo').style.fontSize = after + "px";
+            
+        }
     </script>
 </body>
 

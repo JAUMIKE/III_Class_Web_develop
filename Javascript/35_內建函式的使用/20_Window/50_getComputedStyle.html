@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <style>
+        /* img{
+            position: absolute;
+        } */
+    </style>
 </head>
 
 <body>
@@ -14,10 +19,11 @@
         var elm = document.getElementById('demo');
 
         // 20. 透過 元素.style.top 取得 樣式 top 值
-
+        console.log('a. ' + elm.style.top);
 
         // 30. 透過 window.getComputedStyle(元素).getPropertyValue(樣式屬性));
-
+        var temp = window.getComputedStyle(elm).getPropertyValue('top');
+        console.log('b. '+ temp); //印出來會是auto，要修改css的position之後才會顯示數值
 
         // 40. 觀察上述兩者差異
 

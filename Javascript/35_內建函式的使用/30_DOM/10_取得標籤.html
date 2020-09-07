@@ -18,15 +18,27 @@
     <script>
         var result;
         // 10. 透過 getElementsByTagName 取得所有 <h3> 元素
-    
+        result = document.getElementsByTagName('h2')
+        console.log(result);
+        console.log(result.length);
         // 20. 透過 getElementsByClassName 取得擁有 class 類別的 元素
-                
+        result = document.getElementsByClassName('group1');
+        console.log(result);
+        console.log(result.length);       
         // 30. 透過 getElementById 取得 id 為 myApple 的元素
-        
+        result = document.getElementById('myApple');
+        console.log(result);
+        // console.log(result.length);  //getElementById沒有length屬性(id是唯一)
         // 40. 透過 CSS Selectors 取得 標籤
         //     querySelector()
+        console.log('---------------------------')
+        result = document.querySelector('.group1');
+        console.log(result);
+       
         //     querySelectorAll()
-        
+        result = document.querySelectorAll('.group1');
+        console.log(result);
+        console.log(result.length); 
         // 50. 比較 .querySelectorAll() 和 getElementsByTagName('h3')
         //     若畫面上的元素增加，何者會即時改變?
     

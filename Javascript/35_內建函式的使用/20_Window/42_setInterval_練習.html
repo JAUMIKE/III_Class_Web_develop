@@ -10,14 +10,61 @@
     <h3>指定的秒數，做指定的事情</h3>
 
     <!-- 10. 新增兩顆按鈕，分別對應 start() 和 stop()-->
-
+    <!-- <button onclick="start()">開始計時</button> -->
+    <!-- <button onclick="stop()">暫停計時</button> -->
+    <button onclick="start();timer()">開始計時</button>
+    <button onclick="stop()">暫停計時</button> 
+    <p id="demo">1234</p>
     <!-- 20. 新增兩個標籤，
              一個用來顯示按鈕點後的系統時間，
              一個用來顯示秒數 -->
+             
 
     <script>
+        
+            //1.開始
+            //2.顯示目前時間
+            //3.啟動計時器
+        // var a = timer();
+        // 方法001
+        var showtime;
 
-        // 40. function start() 
+        function timer(){
+            
+            console.log('開始計時');
+            showtime = setInterval(start,1000);
+            document.getElementById("demo").innerHTML=showtime;
+        }
+        function start(){      
+            let d = new Date();   
+            console.log(d.toLocaleString());
+           
+        }
+        // var a = setInterval(start,1000);
+        
+        function stop() { 
+            console.log('停止計時')
+            clearInterval(showtime);
+            
+         }
+        // 方法002
+        // var cnt = 0;;
+        // var flag;
+
+        // function start(){
+        //     var d = new Date();
+        //     console.log(d);
+        //     flag = setInterval(function(){
+        //         cnt += 1;
+        //         console.log(cnt);
+        //     },1000);
+        // } 
+
+        // function stop(){
+        //     console.log('停止計時')
+        //     clearInterval(flag);
+        // }
+
         //     setInterval() 會回傳一個數值(旗子)，關閉時會使用到
         //     新增一個日期物件，顯示系統當前時間
 

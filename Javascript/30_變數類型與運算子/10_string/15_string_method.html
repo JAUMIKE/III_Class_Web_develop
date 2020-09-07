@@ -52,10 +52,14 @@
 
 
         // 6. 字串往左補零
+        
         var demo = "13756"
         var result = demo.padStart(10,'a');
         console.log(result);
         var result2 = demo.padStart(10,0);
+        // 向右補0
+        var result3 = demo.padEnd(10,0);
+        console.log(result3);
 
         // // 7. 比較 substr()、substring()、slice()
         console.group("(0, 2)");
@@ -67,8 +71,8 @@
 
 
         console.group("(3, 5)");
-        console.log(`str.substr(3,5)：${str.substr(3, 5)}`);
-        console.log(`str.substring(3,5)：${str.substring(3, 5)}`);
+        console.log(`str.substr(3,5)：${str.substr(3, 5)}`); //從第三個位置取五項
+        console.log(`str.substring(3,5)：${str.substring(3, 5)}`); //取三、四
         console.log(`str.slice(3,5)： ${str.slice(3, 5)}`);
         console.groupEnd();
 
@@ -88,11 +92,11 @@
         // console.log(`str.slice(3)： ${str.slice(3)}`);
         // console.groupEnd();
 
-        // console.group("(-5)");
-        // console.log(`str.substr(-5)： ${str.substr(-5)}`);
-        // console.log(`str.substring(-5)：${str.substring(-5)}`);
-        // console.log(`str.slice(-5)：${str.slice(-5)}`);
-        // console.groupEnd();
+        console.group("(-5)");
+        console.log(`str.substr(-5)： ${str.substr(-5)}`);
+        console.log(`str.substring(-5)：${str.substring(-5)}`);
+        console.log(`str.slice(-5)：${str.slice(-5)}`);
+        console.groupEnd();
 
     </script>
 </body>

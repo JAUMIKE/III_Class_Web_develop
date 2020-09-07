@@ -11,7 +11,9 @@
 
     <script>
         // 取亂數
-
+        console.log(Math.random());
+        console.log(Math.random());
+        console.log(Math.random());
         // 四捨五入
 
         // 無條件捨棄
@@ -19,12 +21,38 @@
         // 無條件進位
 
         // 9開根號
-
+        console.log(Math.sqrt(64));
 
         // 小練習：透過 Math.random() 取得隨機 0-5 的數值
-
+         
+        console.clear();
+        //方法一
+        var numx = Math.random()*5;
+        console.log(numx);
+        console.log(Math.round(numx));
+        //方法二
+        // 0-5 有6個數值 *6 ==> 0.00006~4.9999x
+        var numy = Math.random()*6
+        console.log(Math.floor(numy));
         // 小練習：透過 Math.random() 取得隨機 2-5 之間的亂數
+        //2-5之間有4個數值 
+        var numz = Math.random()*4 + 2;
+        console.log(Math.floor(numz));        
 
+        var numA = Math.random()*13+1;
+        switch(numA){
+            case 1:
+                console.log('A');
+            case 11:
+                console.log('J');    
+            case 12:
+                console.log('Q');    
+            case 13:
+                console.log('K');    
+                
+        }
+        
+        // console.log(Math.floor(numA));
     </script>
 
 </body>

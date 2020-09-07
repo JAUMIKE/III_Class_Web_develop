@@ -11,22 +11,36 @@
     
     <script>
         // createElement 增加一個元素 (div)
+        //<div></div>
+        var newDiv =  document.createElement('div');
 
         // createTextNode 新增一串文字
-
+        // Apple
+        var newContent = document.createTextNode('Apple');    
         // appendChild 將文字附加到div去
-
+        //<div>Apple</div>
+        newDiv.appendChild(newContent);    
+      
         // insertBefore 指定在元素前增加
+        //在img前面長出div
+        document.body.insertBefore(newDiv,document.getElementById('imgTest'));
         // 在誰的附近增加這個元素，得要先取得那一個元素
         
     </script>
 
     <script>
         // createElement 增加一個元素 (img)
+        var newImg = document.createElement('img');
+        var newImg2 = document.createElement('img');
+         // setAttribute 設定新增元素的屬性
+        newImg.setAttribute('src','../../_image/find.png');
+        newImg2.setAttribute('src','../../_image/find.png');
+         // appendChild 直接在Html文件中增加元素
+        document.body.appendChild(newImg);
+        document.body.insertBefore(newImg2,newDiv);
+       
 
-        // setAttribute 設定新增元素的屬性
-
-        // appendChild 直接在Html文件中增加元素
+       
     </script>
 </body>
 
